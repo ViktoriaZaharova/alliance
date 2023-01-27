@@ -1,0 +1,78 @@
+@import "fonts"
+@import "vars"
+
+.title-section
+	padding: 70px 0 83px
+	h1
+		display: flex
+		align-items: flex-start
+		.svg-icon
+			width: 31px
+			min-width: 31px
+			height: 31px
+			margin: 10px 23px 0 0	
+			fill: $accent
+	.box-text
+		font-size: 20px
+		line-height: 21px
+		border-left: 1px solid #9E9E9E		
+		padding: 0 0 30px 130px
+
+
+.projects
+	margin: 57px 0 113px
+	h2
+		margin: 0 0 60px
+
+.projects-card
+	width: 100%
+	max-width: 408px
+	margin: 0 60px 30px 0
+	&:last-child
+		margin: 0 0 30px
+	&__title
+		color: #000
+		margin: 0 0 30px
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 20px
+		&:hover
+			color: $accent
+	&__img
+		width: 100%
+		height: 240px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 30px 0 0
+	&__link
+		font-size: 20px			
+
+
+// contacts-section
+.contacts-section
+	margin: 0 0 84px
+	.box-text
+		color: #7E7E7E
+		max-width: 577px
+	h3
+		margin: 0 0 25px
+	.phone
+		margin: 34px 0 6px
+		font-size: 36px
+		font-weight: 600
+	.btn
+		margin: 72px 0 0
+		padding: 0 76px	
+
+.address
+	color: #7E7E7E
+	font-size: 20px		
