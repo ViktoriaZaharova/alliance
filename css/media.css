@@ -52,10 +52,10 @@
   h3 {
     font-size: 26px;
   }
-  .contacts-section {
-    margin: 0 0 50px;
+  footer {
+    padding: 50px 0 30px;
   }
-  .contacts-section .phone {
+  footer .phone {
     font-size: 30px;
   }
   .address {
@@ -97,16 +97,16 @@
   .projects {
     margin: 50px 0 60px;
   }
-  .contacts-section .phone {
+  footer .phone {
     margin: 20px 0 10px;
   }
-  .contacts-section .btn {
+  footer .btn {
     margin: 20px 0 0;
   }
-  .contacts-section h3 {
+  footer h3 {
     margin: 0 0 20px;
   }
-  .contacts-section .phone {
+  footer .phone {
     font-size: 22px;
   }
   .address {

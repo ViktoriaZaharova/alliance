@@ -113,28 +113,3 @@
 .projects-card__link {
   font-size: 20px;
 }
-
-.contacts-section {
-  margin: 0 0 84px;
-}
-.contacts-section .box-text {
-  color: #7E7E7E;
-  max-width: 577px;
-}
-.contacts-section h3 {
-  margin: 0 0 25px;
-}
-.contacts-section .phone {
-  margin: 34px 0 6px;
-  font-size: 36px;
-  font-weight: 600;
-}
-.contacts-section .btn {
-  margin: 72px 0 0;
-  padding: 0 76px;
-}
-
-.address {
-  color: #7E7E7E;
-  font-size: 20px;
-}
