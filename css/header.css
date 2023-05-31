@@ -13,8 +13,8 @@ header .btn-group {
 
 .phone {
   color: #000;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
 }
 .phone:hover {
   color: #EF402F;
@@ -37,6 +37,18 @@ header .btn-group {
 
 .nav-menu {
   margin: 0 auto;
+}
+.nav-menu .logo, .nav-menu .user-navigation, .nav-menu .btn-callback, .nav-menu .phone, .nav-menu .list-social, .nav-menu .schedule {
+  display: none;
+}
+.nav-menu .phone {
+  width: 100%;
+  text-align: center;
+  margin: 60px auto;
+  font-size: 18px;
+}
+.nav-menu .user-navigation {
+  margin: 60px auto;
 }
 
 .menu {
@@ -90,6 +102,7 @@ header .btn-group {
   margin: 0 60px 0 0;
 }
 .schedule span {
+  width: 100%;
   display: block;
   font-size: 12px;
 }

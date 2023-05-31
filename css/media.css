@@ -1,5 +1,33 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1650px) {
+  header .btn-group {
+    margin: 0 20px 0 0;
+  }
+  .schedule {
+    margin: 0 20px 0 0;
+  }
+  .menu li {
+    margin: 0 10px 0 0;
+  }
+  footer .phone {
+    font-size: 82px;
+  }
+  .call-box {
+    padding: 0 0 0 50px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .menu {
+    font-size: 14px;
+  }
+  .phone {
+    font-size: 16px;
+  }
+  footer .phone {
+    font-size: 68px;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .projects-card {
     margin: 0 30px 30px 0;
@@ -13,6 +41,61 @@
   }
   .projects-card:last-child {
     margin: 0 0 30px;
+  }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    max-width: 260px;
+    background: #fff;
+    padding: 40px 34px;
+    overflow-y: auto;
+  }
+  .nav-menu .logo, .nav-menu .user-navigation, .nav-menu .btn-callback, .nav-menu .phone, .nav-menu .list-social, .nav-menu .schedule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav-menu .menu {
+    font-size: 16px;
+    margin: 60px 0;
+  }
+  .nav-menu .menu li {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+  .nav-menu .menu li:last-child {
+    margin: 0;
+  }
+  header .logo {
+    margin: 0 auto 0 0;
+  }
+  .call-box {
+    padding: 0 0 0 20px;
+  }
+  .call-box .box-text {
+    max-width: 400px;
+  }
+  footer {
+    padding: 60px 0 50px;
+    font-size: 20px;
+  }
+  footer h3 {
+    margin: 0 0 10px;
+  }
+  footer .phone {
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -36,11 +119,20 @@
   .projects-card__title {
     margin: 0 0 20px;
   }
+  .article-gallery {
+    width: 100%;
+  }
+  .article-gallery .slick-next {
+    right: 0;
+  }
+  .article-gallery__item {
+    width: 450px;
+  }
+  .article-date {
+    margin: 0 0 30px;
+  }
 }
 @media only screen and (max-width: 992px) {
-  .box-text {
-    font-size: 16px;
-  }
   .title-section .box-text {
     padding: 0;
     border: none;
@@ -52,30 +144,81 @@
   h3 {
     font-size: 26px;
   }
+  header .schedule, header .user-navigation {
+    display: none;
+  }
   footer {
-    padding: 50px 0 30px;
+    padding: 65px 0 30px;
+    font-size: 18px;
   }
   footer .phone {
-    font-size: 30px;
+    font-size: 46px;
+    margin: 30px 0 20px;
   }
-  .address {
-    font-size: 16px;
+  footer .list-social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    top: 0;
+    margin: 0 0 0 26px;
+  }
+  footer .list-social li {
+    margin: 0 18px 0 0;
+  }
+  footer .btn {
+    margin: 0;
+  }
+  .call-box {
+    margin: 37px 0 0;
+    padding: 30px 0 0;
+    border: none;
+    border-top: 1px solid #EF402F;
+  }
+  .call-box .box-text {
+    max-width: none;
+  }
+  .call-box__footer {
+    margin: 30px 0 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .link-developer {
+    margin: 27px auto 0;
   }
 }
 @media only screen and (max-width: 768px) {
   .btn {
-    padding: 10px 20px;
-    height: 46px;
-    font-size: 12px;
-  }
-  header {
-    padding: 15px 0;
-  }
-  .phone {
+    padding: 20px;
+    height: 57px;
     font-size: 14px;
   }
-  .logo {
-    max-width: 160px;
+  .btn-sm {
+    padding: 7px 15px;
+    height: 37px;
+  }
+  header {
+    padding: 22px 0;
+  }
+  header .btn-group .btn {
+    display: none;
+  }
+  header .btn-group .btn-mortgage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .wrapper {
+    padding: 100px 0 0;
   }
   .projects-card {
     margin: 0 auto 30px;
@@ -97,31 +240,61 @@
   .projects {
     margin: 50px 0 60px;
   }
-  footer .phone {
-    margin: 20px 0 10px;
+  .mb-50, .mb-40 {
+    margin-bottom: 30px;
   }
-  footer .btn {
-    margin: 20px 0 0;
+  .nav-breadcrumb {
+    margin: 0 0 30px;
   }
-  footer h3 {
+  h1 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .box-text {
+    font-size: 20px;
+  }
+  .box-text p {
     margin: 0 0 20px;
   }
-  footer .phone {
-    font-size: 22px;
-  }
-  .address {
-    margin: 0 0 20px;
+  .box-text p:last-child {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 576px) {
   header .btn {
     display: none;
   }
-  header .phone {
+  header .btn-group {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     margin: 0;
   }
+  .phone {
+    margin: 0 30px 0 0;
+  }
   .logo {
-    max-width: 150px;
+    max-width: 35px;
+  }
+  .nav-menu .logo {
+    max-width: 122px;
+  }
+  .btn-burger {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .btn-mortgage {
+    max-width: 80px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px 10px;
+    height: 44px;
+  }
+  .h1, h2 {
+    font-size: 48px;
   }
   .title-section {
     padding: 30px 0;
@@ -147,9 +320,104 @@
   .projects-card {
     max-width: none;
   }
+  footer {
+    font-size: 16px;
+  }
+  .box-text {
+    font-size: 16px;
+  }
+  .document-box__body {
+    padding: 30px 27px 40px;
+  }
+  .document-box__name {
+    margin: 40px 0 0;
+  }
+  .btn-toggle {
+    margin: 13px auto 0;
+  }
+  .news-card .btn {
+    margin: 15px 0 0;
+  }
+  .news-card__img {
+    height: 185px;
+  }
+  .article-text {
+    font-size: 16px;
+  }
+  .article-text p {
+    margin: 0 0 20px;
+  }
+  .article-text p:last-child {
+    margin: 0;
+  }
+  .article-section {
+    margin: 32px 0 0;
+  }
+  .article-section h2 {
+    font-size: 36px;
+  }
+  .article-gallery::before {
+    width: 186px;
+    background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .article-gallery__item {
+    width: 261px;
+  }
+  .article-video {
+    height: 222px;
+    margin: 32px 0 0;
+  }
 }
 @media only screen and (max-width: 420px) {
   h1 {
     font-size: 26px;
+  }
+  .phone {
+    margin: 0 10px 0 0;
+  }
+  .btn-burger {
+    margin: 0 0 0 10px;
+  }
+  footer .list-social {
+    margin: 10px 0 0;
+    width: 100%;
+  }
+  footer h3 {
+    font-size: 28px;
+  }
+  footer .phone {
+    font-size: 30px;
+  }
+  .news-card__title {
+    font-size: 20px;
+  }
+  .btn .svg-icon {
+    width: 20px;
+    height: 10px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .phone {
+    font-size: 14px;
+  }
+  .btn-burger {
+    width: 20px;
+    height: 22px;
+  }
+  .btn-mortgage {
+    font-size: 12px;
+    max-width: 75px;
+  }
+  .news-card__title {
+    font-size: 18px;
+  }
+  .news-card .btn {
+    padding: 20px 10px;
+    width: 100%;
+  }
+  .btn .svg-icon {
+    width: 14px;
+    height: 8px;
   }
 }

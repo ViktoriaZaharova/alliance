@@ -1,6 +1,33 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1650px)
+	header
+		.btn-group
+			margin: 0 20px 0 0
+
+	.schedule
+		margin: 0 20px 0 0
+
+	.menu li
+		margin: 0 10px 0 0
+
+	footer .phone
+		font-size: 82px
+
+	.call-box
+		padding: 0 0 0 50px
+
+@media only screen and (max-width: 1500px)
+	.menu
+		font-size: 14px
+
+	.phone
+		font-size: 16px
+
+	footer .phone
+		font-size: 68px
+
 @media only screen and (max-width: 1400px)
 	.projects-card
 		margin: 0 30px 30px 0
@@ -11,6 +38,50 @@
 			font-size: 16px
 		&:last-child
 			margin: 0 0 30px
+
+	.btn-burger
+		display: flex
+
+	.nav-menu
+		display: none
+		position: fixed
+		left: 0
+		top: 0
+		z-index: 10
+		height: 100%
+		width: 100%
+		max-width: 260px
+		background: #fff
+		padding: 40px 34px
+		overflow-y: auto
+		.logo, .user-navigation, .btn-callback, .phone, .list-social, .schedule
+			display: flex
+			flex-wrap: wrap
+		.menu
+			font-size: 16px
+			margin: 60px 0
+			li
+				margin: 0 0 20px
+				width: 100%
+				&:last-child
+					margin: 0
+
+	header
+		.logo
+			margin: 0 auto 0 0
+
+	.call-box
+		padding: 0 0 0 20px
+		.box-text
+			max-width: 400px
+
+	footer
+		padding: 60px 0 50px
+		font-size: 20px
+		h3
+			margin: 0 0 10px
+		.phone
+			font-size: 50px
 
 @media only screen and (max-width: 1200px)
 	.title-section
@@ -34,10 +105,17 @@
 		&__title
 			margin: 0 0 20px
 
-@media only screen and (max-width: 992px)
-	.box-text
-		font-size: 16px
+	.article-gallery
+		width: 100%
+		.slick-next
+			right: 0
+		&__item
+			width: 450px
 
+	.article-date
+		margin: 0 0 30px
+
+@media only screen and (max-width: 992px)
 	.title-section
 		.box-text
 			padding: 0
@@ -50,28 +128,64 @@
 	h3
 		font-size: 26px
 
-	footer
-		padding: 50px 0 30px
-		.phone
-			font-size: 30px
+	header
+		.schedule, .user-navigation
+			display: none
 
-	.address
-		font-size: 16px
+	footer
+		padding: 65px 0 30px
+		font-size: 18px
+		.phone
+			font-size: 46px
+			margin: 30px 0 20px
+		.list-social
+			flex-direction: row
+			position: relative
+			top: 0
+			margin: 0 0 0 26px
+			li
+				margin: 0 18px 0 0
+		.btn
+			margin: 0
+
+	.call-box
+		margin: 37px 0 0
+		padding: 30px 0 0
+		border: none
+		border-top: 1px solid #EF402F
+		.box-text
+			max-width: none
+		&__footer
+			margin: 30px 0 0
+			width: 100%
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+
+	.link-developer
+		margin: 27px auto 0
 
 @media only screen and (max-width: 768px)
 	.btn
-		padding: 10px 20px
-		height: 46px
-		font-size: 12px
-
-	header
-		padding: 15px 0
-
-	.phone
+		padding: 20px
+		height: 57px
 		font-size: 14px
 
-	.logo
-		max-width: 160px
+	.btn-sm
+		padding: 7px 15px
+		height: 37px
+
+	header
+		padding: 22px 0
+		.btn-group
+			.btn
+				display: none
+			.btn-mortgage
+				display: flex
+				margin: 0
+
+	.wrapper
+		padding: 100px 0 0
 
 	.projects-card
 		margin: 0 auto 30px
@@ -86,28 +200,55 @@
 	.projects
 		margin: 50px 0 60px
 
-	footer
-		.phone
-			margin: 20px 0 10px
-		.btn
-			margin: 20px 0 0	
-		h3
-			margin: 0 0 20px
-		.phone
-			font-size: 22px	
+	.mb-50, .mb-40
+		margin-bottom: 30px
 
-	.address
-		margin: 0 0 20px		
+	.nav-breadcrumb
+		margin: 0 0 30px
+
+	h1
+		font-size: 36px
+
+	h3
+		font-size: 24px
+
+	.box-text
+		font-size: 20px
+		p
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
 
 @media only screen and (max-width: 576px)
 	header
 		.btn
 			display: none
-		.phone
+		.btn-group
+			order: 1
 			margin: 0
 
+	.phone
+		margin: 0 30px 0 0
+
 	.logo
-		max-width: 150px
+		max-width: 35px
+
+	.nav-menu
+		.logo
+			max-width: 122px
+
+	.btn-burger
+		order: 2
+
+	.btn-mortgage
+		max-width: 80px
+		font-size: 14px
+		line-height: 17px
+		padding: 5px 10px
+		height: 44px
+
+	.h1, h2
+		font-size: 48px
 
 	.title-section
 		padding: 30px 0
@@ -124,14 +265,59 @@
 		font-size: 30px
 
 	h2
-		font-size: 26px	
+		font-size: 26px
 
 	h3
 		font-size: 24px
 
-
 	.projects-card
 		max-width: none
+
+	footer
+		font-size: 16px
+
+	.box-text
+		font-size: 16px
+
+	.document-box
+		&__body
+			padding: 30px 27px 40px
+		&__name
+			margin: 40px 0 0
+
+	.btn-toggle
+		margin: 13px auto 0
+
+	.news-card
+		.btn
+			margin: 15px 0 0
+		&__img
+			height: 185px
+
+	.article-text
+		font-size: 16px
+		p
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+
+	.article-section
+		margin: 32px 0 0		
+		h2
+			font-size: 36px	
+
+	.article-gallery
+		
+		&::before
+			width: 186px
+			background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+		&__item
+			width: 261px
+
+	.article-video
+		height: 222px
+		margin: 32px 0 0
+		
 
 @media only screen and (max-width: 480px)
 
@@ -139,4 +325,47 @@
 	h1
 		font-size: 26px
 
+	.phone
+		margin: 0 10px 0 0
+
+	.btn-burger
+		margin: 0 0 0 10px
+
+	footer
+		.list-social
+			margin: 10px 0 0
+			width: 100%
+		h3
+			font-size: 28px
+		.phone
+			font-size: 30px
+
+	.news-card__title
+		font-size: 20px
+
+	.btn .svg-icon
+		width: 20px
+		height: 10px
+
 @media only screen and (max-width: 370px)
+	.phone
+		font-size: 14px
+
+	.btn-burger
+		width: 20px
+		height: 22px
+
+	.btn-mortgage
+		font-size: 12px
+		max-width: 75px
+
+	.news-card
+		&__title
+			font-size: 18px
+		.btn
+			padding: 20px 10px
+			width: 100%
+
+	.btn .svg-icon
+		width: 14px
+		height: 8px

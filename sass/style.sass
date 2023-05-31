@@ -46,6 +46,9 @@ body
 	background: #fff
 	color: #000
 
+// html, body	
+// 	overflow-x: hidden
+
 img
 	display: block
 	max-width: 100%
@@ -119,23 +122,31 @@ button, .btn
 	align-items: center
 	justify-content: center
 	text-align: center
-	padding: 10px 39px
+	padding: 10px 33px
 	font-size: 14px
 	font-weight: 500
 	height: 57px
 	border-radius: 10px
 	transition: 0.3s ease
+	.svg-icon
+		width: 27px
+		height: 15px
+		margin: 0 0 0 10px
 
 .btn-sm
 	height: 37px
-	padding: 10px 15px	
+	padding: 10px 15px
 
 .btn-accent
 	background: $accent
 	color: #fff
+	.svg-icon
+		fill: #fff
 	&:hover
 		background: $hover
 		color: #fff
+		.svg-icon
+			fill: #fff
 
 .btn-border-grey
 	border: 1px solid #9E9E9E
@@ -153,15 +164,22 @@ button, .btn
 		color: #fff
 		border-color: $hover
 
+.btn-grey
+	color: #707070
+	background: #EEEEEE
+	&:hover
+		background: $accent
+		color: #fff
+
 .btn-group
 	.btn
 		border-radius: 10px
 		margin: 0 10px 0 0
 		&:last-child
-			margin: 0	
+			margin: 0
 
 .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn, .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
-	border-radius: 10px						
+	border-radius: 10px
 
 .svg-icon
 	display: inline-block
@@ -184,37 +202,61 @@ ul, ol
 
 h1
 	font-size: 48px
-	font-weight: bold
 	text-transform: uppercase
 	width: 100%
+	margin: 0 0 30px
 
 .h1
+	text-transform: uppercase
 	font-size: 96px
-		
+	font-weight: normal
 
 h2
 	font-size: 40px
-	font-weight: 500
-	text-transform: uppercase		
+	text-transform: uppercase
 	width: 100%
 
 h3
-	font-size: 36px
-	font-weight: 600
+	font-size: 24px
+	font-weight: 700
+
+.nav-breadcrumb
+	margin: 0 0 50px
+	width: 100%
+
+.breadcrumb
+	width: 100%
+	margin: 0
+	padding: 0
+	font-size: 12px
+	color: #9E9E9E
+	a
+		color: #9E9E9E
+		display: flex
+		align-items: center
+		&:hover
+			color: $accent
+		&:after
+			content: '>'
+			display: inline-block
+			margin: 0 7px
 
 .text-uppercase
-	text-transform: uppercase	
+	text-transform: uppercase
 
 .box-text
-	font-size: 20px
-	
-	line-height: 24px		
+	font-size: 24px
+	color: #707070
+	p
+		margin: 0 0 30px
+		&:last-child
+			margin: 0
 
 .bg-grey
 	background: #F2F2F2
 
 .bg-light-grey
-	background: #FAFAFA	
+	background: #FAFAFA
 
 .container
 	max-width: 1750px
@@ -225,28 +267,78 @@ h3
 	>*
 		padding: 0 15px
 
+.mb-20
+	margin-bottom: 20px		
+
 .mb-30
 	margin-bottom: 30px
 
+.mb-40
+	margin-bottom: 40px
+
+.mb-50
+	margin-bottom: 50px
+
+.mb-60
+	margin-bottom: 60px
+
 .wrapper
-	padding: 162px 0 0	
+	padding: 117px 0 0
 
 .color-accent
-	color: $accent	
+	color: $accent
 
 a.color-accent
 	color: $accent
 	&:hover
 		color: #000
 
-
-
+.list-social
+	display: flex
+	align-items: center
+	li
+		margin: 0 18px 0 0
+		&:last-child
+			margin: 0
+		a
+			@include d-flex
 
 .slick-slider
 	width: 100%
 
 .slick-slide
 	outline: none
+
+.slick-arrow
+	position: absolute
+	z-index: 1
+	opacity: 1
+	top: 50%
+	transform: translate(0,-50%)
+	border: none
+	border-radius: 50%
+	background: $accent
+	stroke: #fff
+	fill: none
+	width: 68px
+	height: 68px
+	padding: 23px
+	cursor: pointer
+	transition: .3s ease
+	&:hover
+		background: $hover
+	&.slick-disabled
+		opacity: 0	
+
+.slick-prev
+	left: 0
+	svg
+		transform: rotate(180deg)
+
+.slick-next
+	right: 0
+
+
 
 //checkbox my
 .label-checkbox
