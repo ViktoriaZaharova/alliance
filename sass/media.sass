@@ -83,6 +83,15 @@
 		.phone
 			font-size: 50px
 
+	.contacts-box
+		flex-wrap: wrap
+		&__left
+			width: 100%
+		&__right
+			margin: 20px 0 0	
+			.btn
+				margin: 20px 0 0		
+
 @media only screen and (max-width: 1200px)
 	.title-section
 		padding: 50px 0
@@ -164,6 +173,21 @@
 
 	.link-developer
 		margin: 27px auto 0
+
+	.map
+		height: 422px
+		margin: 42px 0 0
+
+	.contacts-box
+		&__address
+			br
+				display: none
+
+	.btn-clear
+		margin: 20px 0 0
+
+	.link-toggle
+		margin: 40px auto 0	
 
 @media only screen and (max-width: 768px)
 	.btn
@@ -317,7 +341,38 @@
 	.article-video
 		height: 222px
 		margin: 32px 0 0
+
+	.contacts-box__address
+		font-size: 16px	
 		
+	.modal-dialog
+		margin: 30px auto 
+
+	.modal-content
+		padding: 30px
+		.btn-close
+			right: -10px
+			top: -10px
+			padding: 10px
+			width: 30px
+			height: 30px
+
+	.modal-title
+		font-size: 24px
+
+	.modal-header
+		.box-text
+			font-size: 16px	
+
+	.toggle-btn
+		font-size: 18px
+
+	.comparison-column__content
+		margin: 30px 0 0
+
+
+	.comparison-column__characteristics span
+		font-size: 18px
 
 @media only screen and (max-width: 480px)
 
@@ -346,6 +401,9 @@
 	.btn .svg-icon
 		width: 20px
 		height: 10px
+
+	.toggle-btn
+		font-size: 14px	
 
 @media only screen and (max-width: 370px)
 	.phone

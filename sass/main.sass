@@ -233,4 +233,331 @@
 	iframe
 		width: 100%
 		height: 100%
-		border-radius: 10px	
+		border-radius: 10px
+
+.contacts-box
+	width: 100%
+	margin: 0 0 30px
+	border: 1px solid #9E9E9E
+	border-radius: 10px
+	background: #fff
+	padding: 30px
+	display: flex
+	align-items: stretch
+
+	&:last-child
+		margin: 0
+	&__left
+		width: calc(100% - 220px)
+		padding: 0 22px 0 0
+	&__right
+		width: 220px
+		display: flex
+		flex-direction: column
+		.btn
+			margin: auto 0 0
+			width: 100%
+			padding: 10px
+	&__phone
+		font-size: 24px
+		font-weight: bold
+		margin: 0 0 5px
+		color: #000
+		&:hover
+			color: $accent
+	h3
+		color: #707070
+		margin: 0 0 22px
+		font-weight: normal
+	&__address
+		font-size: 20px
+	.schedule
+		margin: 0 0 20px
+
+// .comparison
+.btn-clear
+	margin: 0 0 0 auto
+	.svg-icon
+		width: 16px
+		min-width: 16px
+		height: 17px
+
+.table-wrapper
+	width: 100%
+	overflow-x: auto
+	display: flex
+	align-items: flex-start
+
+.comparison-column
+	max-width: 262px
+	min-width: 262px
+	margin: 0 30px 20px 0
+	position: relative
+	&__delete
+		position: absolute
+		top: 22px
+		right: 22px
+		width: 28px
+		height: 29px
+		@include d-flex
+		fill: $accent
+	&__photo
+		width: 100%
+		height: 364px
+		background: #fff
+		border: 1px solid #9E9E9E
+		border-radius: 10px
+		padding: 85px 25px 23px
+		display: flex
+		flex-direction: column
+	&__img
+		@include d-flex
+		max-width: 185px
+		margin: 0 auto auto
+		height: 122px
+		img
+			width: 100%
+			max-height: 100%
+	&__body
+		margin: 30px 0 0
+	&__name
+		margin: 0 0 19px
+		font-size: 20px
+		sup
+			font-size: 14px
+	.btn
+		padding: 10px 20px
+	&__content
+		margin: 53px 0 0
+		width: 100%
+	&__characteristics
+		width: 100%
+		li
+			padding: 0 0 20px
+			margin: 0 0 20px
+			border-bottom: 1px solid #B0B0B0
+			&:last-child
+				padding: 0
+				margin: 0
+				border: none
+		p
+			margin: 0 0 6px
+		span
+			display: block
+			font-size: 20px
+			font-weight: bold
+			sup
+				font-size: 14px
+
+// callback
+.callback
+	margin: 170px 0 0
+
+.callback-wrapper
+	display: flex
+	align-items: center
+	position: relative
+	flex-wrap: wrap
+	background: #F2F2F2
+	border-radius: 10px
+	padding: 86px 685px 102px 112px
+	&__image
+		position: absolute
+		right: 75px
+		bottom: 0
+		max-width: 510px
+		@include d-flex
+	h2
+		max-width: 525px
+		margin: 0 28px 0 0
+		font-size: 48px
+
+// page-purchase
+.page-purchase
+	margin: 0 0 40px
+	h1
+		margin: 0 0 38px
+
+.variable-purchase
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 14px
+	font-weight: 500
+	margin: 0 0 50px
+	li
+		margin: 0 20px 20px 0
+		&:last-child
+			margin: 0 0 20px
+	&-item
+		display: flex
+		align-items: center
+		border: 1px solid #EF402F
+		border-radius: 10px
+		text-transform: uppercase
+		color: #000
+		padding: 20px 40px
+		&:hover
+			color: #000
+		&.active
+			&:hover
+				color: #fff
+		&__icon
+			@include d-flex
+			border: 1px solid #000
+			border-radius: 50%
+			margin: 0 10px 0 0
+			min-width: 48px
+			max-width: 48px
+			height: 48px
+			padding: 11px
+			fill: none
+			stroke: #000
+
+.purchase-image, .benefit-image
+	width: 100%
+	border-radius: 10px
+	img
+		border-radius: 10px
+
+.benefit-image
+	margin: 0 0 65px
+
+.advantages-variable
+	margin: 70px 0 0
+	.btn
+		margin: auto
+
+.advantages-variable-box
+	display: flex
+	align-items: flex-start
+	width: 100%
+	height: 100%
+	padding: 32px 40px 40px 30px
+	border: 1px solid #9E9E9E
+	border-radius: 10px
+	background: #fff
+	font-size: 20px
+	&__icon
+		@include d-flex
+		margin: 0 35px 0 0
+		width: 48px
+		height: 48px
+		min-width: 48px
+		border: 1px solid #EF402F
+		border-radius: 50%
+		padding: 12px
+		stroke: $accent
+		fill: none
+	&-last
+		border: none
+
+.stages-registration
+	h2
+		margin: 0 0 40px
+		font-size: 48px
+
+.stages-registration-box
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: stretch
+	border: 1px solid #9E9E9E
+	border-radius: 10px
+	background: #fff
+	font-size: 20px
+	&__number
+		background: $accent
+		color: #fff
+		border-radius: 10px
+		@include d-flex
+		width: 116px
+		font-size: 48px
+	&__text
+		width: calc(100% - 116px)
+		padding: 30px 60px 38px 35px
+
+// benefit
+.benefit
+	margin: 100px 0
+
+.benefit-box
+	.input-title
+		margin: 0 0 20px
+		width: 100%
+		font-size: 24px
+		color: #707070
+	input
+		margin: 0 0 20px
+
+	&__value
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 20px 0 0
+		color: #707070
+
+.benefit-total-box
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin: 0 73px 0 0
+	padding: 40px 30px
+	background: #FAFAFA
+	border-radius: 10px
+	font-size: 20px
+	&__left
+		width: 340px
+		border-right: 1px solid #000000
+		padding: 0 20px 0 0
+	&__right
+		width: calc(100% - 340px)
+		padding: 0 0 0 60px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.economy-item
+			margin: 14px 0 0
+			font-weight: bold
+			font-size: 24px
+		.btn
+			margin: 0 0 0 auto	
+	&__list
+		li
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+		span
+			color: #707070
+			font-size: 20px
+		p
+			font-size: 48px	
+	&__value
+		margin: auto 0
+
+	h3
+		margin: 0 0 30px
+		color: $accent
+		font-size: 24px
+	&:last-child
+		margin: 0
+
+
+.economy-item
+	display: flex
+	align-items: center
+	margin: 10px 0 0
+	font-size: 16px
+	span
+		color: #21A355
+		font-size: 16px
+	.svg-icon
+		margin: 0 0 0 10px
+		fill: #21A355
+		@include d-flex
+		width: 16px
+		min-width: 16px
+		height: 7px
+

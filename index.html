@@ -279,6 +279,38 @@
 		</footer>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Оставить заявку</div>
+					<div class="box-text">
+						<p>оставьте ваши данные и свяжемся с вами в ближайшее время</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="телефон" name="phone" required>
+						</label>
+	
+						<button type="submit" class="btn btn-accent">отправить заявку</button>
+						<div class="consent">нажимая на кнопку вы соглашаетесь на политику конфиденциальности</div>
+					</form>
+				</div>
+	
+			</div>
+		</div>
+	</div>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>

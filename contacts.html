@@ -128,15 +128,18 @@
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row align-items-stretch">
 					<div class="col-12 col-lg-5 col-xl-4">
 						<div class="contacts-box">
 							<div class="contacts-box__left">
-								<h3></h3>
-								<div class="contacts-box__address"></div>
+								<h3>Главный офис компании</h3>
+								<div class="contacts-box__address">
+									<p>г. Пенза, <br>
+										ул. Суворова, 10, 3 этаж</p>
+								</div>
 							</div>
 							<div class="contacts-box__right">
-								<a href="tel:" class="contacts-box__phone"></a>
+								<a href="tel:+78412728080" class="contacts-box__phone">8 (8412) 72-80-80</a>
 								<a href="#" class="btn btn-accent">
 									показать на карте <svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -146,11 +149,17 @@
 						</div>
 						<div class="contacts-box">
 							<div class="contacts-box__left">
-								<h3></h3>
-								<div class="contacts-box__address"></div>
+								<h3>Офис продаж</h3>
+								<div class="contacts-box__address">
+									<p>Пензенская область, <br>
+									с. Засечное, <br>
+									ул. Семейная, 12 к1</p>
+								</div>
 							</div>
 							<div class="contacts-box__right">
-								<a href="tel:" class="contacts-box__phone"></a>
+								<a href="tel:+78412728080" class="contacts-box__phone">8 (8412) 72-80-80</a>
+								<div class="schedule">Пн.- Пт. с 09:00 до 18:00
+								Сб. с 10:00 до 16:00</div>
 								<a href="#" class="btn btn-accent">
 									показать на карте <svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -160,11 +169,16 @@
 						</div>
 						<div class="contacts-box">
 							<div class="contacts-box__left">
-								<h3></h3>
-								<div class="contacts-box__address"></div>
+								<h3>Офис продаж</h3>
+								<div class="contacts-box__address">
+									<p>г. Пенза, <br>
+									ул. Окружная, 16</p>
+								</div>
 							</div>
 							<div class="contacts-box__right">
-								<a href="tel:" class="contacts-box__phone"></a>
+								<a href="tel:+78412721616" class="contacts-box__phone">8 (8412) 72-16-16</a>
+								<div class="schedule">Пн.- Пт. с 09:00 до 18:00
+									Сб. с 10:00 до 16:00</div>
 								<a href="#" class="btn btn-accent">
 									показать на карте <svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -231,6 +245,37 @@
 			</div>
 		</footer>
 	</div>
+
+<!-- Modal -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title">Оставить заявку</div>
+				<div class="box-text"><p>оставьте ваши данные и свяжемся с вами в ближайшее время</p></div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form method="post" class="form">
+					<label>
+						<input type="text" placeholder="имя" name="name">
+					</label>
+					<label>
+						<input type="text" placeholder="телефон" name="phone" required>
+					</label>
+
+					<button type="submit" class="btn btn-accent">отправить заявку</button>
+					<div class="consent">нажимая на кнопку вы соглашаетесь на политику конфиденциальности</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
 
 
 	<!-- add plugins js-->

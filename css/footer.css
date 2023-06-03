@@ -79,3 +79,76 @@ footer .list-social li:last-child {
 .link-developer:hover {
   color: #EF402F;
 }
+
+.modal-dialog {
+  max-width: 450px;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  padding: 40px;
+}
+.modal-content .btn-close {
+  padding: 0;
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  fill: #fff;
+  background: #EF402F;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 1;
+  padding: 13px;
+  top: -54px;
+  right: -50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-header {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+}
+.modal-header .box-text {
+  font-size: 20px;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  margin: 0 auto 7px;
+}
+
+.modal-body {
+  margin: 37px 0 0;
+  padding: 0;
+}
+
+.form button {
+  margin: 37px auto 0;
+}
+
+.consent {
+  text-align: center;
+  margin: 10px auto 0;
+  color: #707070;
+  font-size: 12px;
+  max-width: 245px;
+}

@@ -74,16 +74,17 @@ input, textarea, select
 	padding: 0 15px
 	box-sizing: border-box
 	font-family: $default-font
-	border: none
+	border: 1px solid #9E9E9E
 	border-radius: 10px
 	width: 100%
-	height: 54px
+	height: 50px
+	text-align: center
 	background: transparent
 	color: #000
-	font-size: 15px
+	font-size: 16px
 
 	&::placeholder
-		color: #595959
+		color: #000000
 
 	&:hover, &:focus
 		outline: none
@@ -92,7 +93,7 @@ input, textarea, select
 label
 	display: block
 	width: 100%
-	margin: 0 0 13px
+	margin: 0 0 15px
 
 	&:last-child
 		margin: 0
@@ -132,10 +133,19 @@ button, .btn
 		width: 27px
 		height: 15px
 		margin: 0 0 0 10px
+	.svg-icon-plus
+		width: 16px
+		height: 16px
+		min-width: 16px
 
 .btn-sm
 	height: 37px
 	padding: 10px 15px
+
+.btn-md
+	height: 97px
+	padding: 40px
+	text-transform: uppercase
 
 .btn-accent
 	background: $accent
@@ -220,6 +230,9 @@ h3
 	font-size: 24px
 	font-weight: 700
 
+.text-transform-none
+	text-transform: none
+
 .nav-breadcrumb
 	margin: 0 0 50px
 	width: 100%
@@ -268,10 +281,13 @@ h3
 		padding: 0 15px
 
 .mb-20
-	margin-bottom: 20px		
+	margin-bottom: 20px
 
 .mb-30
 	margin-bottom: 30px
+
+.mb-35	
+	margin-bottom: 35px	
 
 .mb-40
 	margin-bottom: 40px
@@ -285,6 +301,8 @@ h3
 .wrapper
 	padding: 117px 0 0
 
+	
+
 .color-accent
 	color: $accent
 
@@ -292,6 +310,9 @@ a.color-accent
 	color: $accent
 	&:hover
 		color: #000
+
+.color-green
+	color: #21A355		
 
 .list-social
 	display: flex
@@ -328,7 +349,7 @@ a.color-accent
 	&:hover
 		background: $hover
 	&.slick-disabled
-		opacity: 0	
+		opacity: 0
 
 .slick-prev
 	left: 0
@@ -337,8 +358,6 @@ a.color-accent
 
 .slick-next
 	right: 0
-
-
 
 //checkbox my
 .label-checkbox
@@ -367,3 +386,173 @@ a.color-accent
 	background: #fff url("../img/check-black.svg") no-repeat center
 	background-size: 8px
 //checkbox my end
+
+.radio
+	position: relative
+	color: #1D1D20
+	font-size: 14px
+	font-weight: 500
+	display: flex
+	align-items: center
+	width: fit-content
+	padding: 20px
+	cursor: pointer
+	transition: .3s ease
+	input
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border: 1px solid $accent
+		border-radius: 10px
+		padding: 0
+		z-index: -1
+		transition: .3s ease
+		&:checked
+			background: $accent
+			+ .radio-text
+				color: #fff
+
+.radio-text
+	transition: .3s ease
+
+.list-radio
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 20px 20px 0
+		&:last-child
+			margin: 0	0 20px
+
+.js-tab-content
+	display: none
+	&.active
+		display: block
+
+.js-tab-trigger
+	&.active
+		background: $accent
+		color: #fff
+		.variable-purchase-item__icon
+			stroke: #fff		
+			border-color: #fff			
+
+.toggle-btn
+	display: flex
+	align-items: center
+	color: #707070
+	position: relative
+	z-index: 1
+	font-size: 20px
+
+.cb-value
+	position: absolute
+	z-index: 2
+	width: 100%
+	height: 100%
+	background: transparent
+	left: 0
+	top: 0
+	border: none
+	cursor: pointer
+	padding: 0
+
+.round-btn
+	position: relative
+	margin: 0 10px
+	width: 39px
+	min-width: 39px
+	height: 20px
+	background: #707070
+	border-radius: 10px
+	cursor: pointer
+	z-index: -1
+	transition: 0.3s ease
+	&::before
+		content: ""
+		position: absolute
+		border-radius: 50%
+		width: 12px
+		height: 12px
+		top: 50%
+		right: 4px
+		transform: translate(0, -50%)
+		background: #fff
+		z-index: 1
+		transition: 0.5s ease
+
+.toggle-btn.active
+	.round-btn
+		background: #EEEEEE
+		&::before
+			right: auto
+			left: 3px
+			transform: translate(0, -50%)
+			background: #EF402F
+
+.toggle-btn__text
+	transition: 0.5s ease
+	position: relative
+	z-index: 1
+	color: #000000
+	&:first-child
+		color: #707070
+
+.toggle-btn.active
+
+	.toggle-btn__text
+		color: #707070
+		&:first-child
+			color: #000000
+
+.link-toggle
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 80px auto 0
+	font-size: 14px
+	font-weight: 500
+	.svg-icon
+		width: 21px
+		height: 10px
+		margin: 0 0 0 10px
+		@include d-flex
+		stroke: $accent
+		fill: none
+
+
+// slider range
+.slider-range-input
+	width: 100%
+	border: 1px solid #EF402F
+	border-radius: 5px
+	height: 90px
+	padding: 0 30px
+	color: #000000
+	font-size: 48px
+	text-align: left
+	&::placeholder
+		color: #000000	
+
+.ui-widget.ui-widget-content
+	height: 10px
+	background: #EEEEEE
+	border-radius: 5px
+	border: none
+
+.ui-slider .ui-slider-range
+	border-radius: 5px
+
+.ui-slider .ui-slider-handle
+	background: #EF402F
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	border: none
+	&.ui-state-focus
+		box-shadow: none
+		outline: none	
+

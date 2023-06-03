@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Альянс - группа помпаний</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-center">
+						<a href="index.html" class="logo">
+							<img src="img/logo.svg" alt="" class="d-none d-sm-block">
+							<img src="img/logo-mobile.svg" alt="" class="d-block d-sm-none">
+						</a>
+
+						<nav class="nav-menu">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+							<ul class="menu my-ul">
+								<li><a href="objects.html">объекты</a></li>
+								<li><a href="commercial.html">коммерческая недвижимость</a></li>
+								<li><a href="purchase-methods.html">способы покупки</a></li>
+								<li><a href="about.html">о нас</a></li>
+								<li><a href="contacts.html">контакты</a></li>
+							</ul>
+
+							<div class="schedule">
+								<span>офис продаж:</span>
+								<p>9:00-18:00</p>
+							</div>
+
+							<div class="user-navigation btn-group">
+								<a href="#" class="user-navigation__link">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</a>
+								<a href="#" class="user-navigation__link">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#comparison"></use>
+									</svg>
+								</a>
+							</div>
+
+							<a href="#" class="btn btn-callback btn-sm btn-border-grey" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать
+								звонок</a>
+
+							<a href="tel:+78412708080" class="phone">+7 (8412) 70-80-80</a>
+
+							<ul class="list-social my-ul">
+								<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+							</ul>
+						</nav>
+
+						<div class="schedule">
+							<span>офис продаж:</span>
+							<p>9:00-18:00</p>
+						</div>
+
+						<div class="user-navigation btn-group">
+							<a href="#" class="user-navigation__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#heart"></use>
+								</svg>
+							</a>
+							<a href="#" class="user-navigation__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#comparison"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="btn-group">
+							<a href="#" class="btn btn-sm btn-border-accent btn-mortgage">ипотека от 4%</a>
+							<a href="#" class="btn btn-sm btn-border-grey" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать звонок</a>
+						</div>
+						<a href="tel:+78412708080" class="phone">+7 (8412) 70-80-80</a>
+
+						<div class="btn-burger"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#burger"></use>
+							</svg></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page page-purchase">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="nav-breadcrumb">
+							<ul class="breadcrumb my-ul">
+								<li><a href="index.html">Главная</a></li>
+								<li><span>Способы покупки</span></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-7">
+
+						<h1>Способы покупки</h1>
+						<ul class="variable-purchase my-ul">
+							<li>
+								<a href="#" class="js-tab-trigger variable-purchase-item active" data-tab="1">
+									<span class="variable-purchase-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tab1"></use>
+										</svg></span>
+									<span class="variable-purchase-item__text">ипотека</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="js-tab-trigger variable-purchase-item" data-tab="2">
+									<span class="variable-purchase-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tab2"></use>
+										</svg></span>
+									<span class="variable-purchase-item__text">trade-in</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="js-tab-trigger variable-purchase-item" data-tab="3">
+									<span class="variable-purchase-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tab3"></use>
+										</svg></span>
+									<span class="variable-purchase-item__text">рассрочка</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="js-tab-trigger variable-purchase-item" data-tab="4">
+									<span class="variable-purchase-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tab4"></use>
+										</svg></span>
+									<span class="variable-purchase-item__text">онлайн сделка</span>
+								</a>
+							</li>
+						</ul>
+
+						<div class="variable-purchase-content js-tab-content active" data-tab="1">
+							<div class="box-text">
+								<p>Ипотека - это долгосрочный кредит, предоставляемый банками или другими кредитными организациями на
+									приобретение
+									недвижимости. Она позволяет получить финансирование для покупки жилья и выплачивать его поэтапно в
+									течение нескольких
+									лет. Владелец жилья получает право использовать купленное жилье, но его владением остается банк, пока
+									кредит не будет
+									полностью погашен.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-12 col-lg-5">
+						<div class="purchase-image"><img src="img/method.jpg" alt=""></div>
+					</div>
+
+					<div class="col-12">
+						<div class="js-tab-content active advantages-variable" data-tab="1">
+							<div class="row">
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-variable-box">
+										<div class="advantages-variable-box__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#tab1"></use>
+											</svg>
+										</div>
+										<div class="advantages-variable-box__text">
+											<p>Позволяет стать собственником жилья, даже если нет достаточной суммы на покупку в наличии.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-variable-box">
+										<div class="advantages-variable-box__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#tab1"></use>
+											</svg>
+										</div>
+										<div class="advantages-variable-box__text">
+											<p>Распределение платежей на долгосрочный период позволяет выплачивать кредит в более комфортных
+												условиях.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-variable-box">
+										<div class="advantages-variable-box__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#tab1"></use>
+											</svg>
+										</div>
+										<div class="advantages-variable-box__text">
+											<p>Ипотечный кредит может иметь более низкую процентную ставку, чем другие виды кредитов.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-variable-box advantages-variable-box-last">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-md btn-accent">
+											<span>оставить заявку</span>
+											<svg class="svg-icon svg-icon-plus">
+												<use xlink:href="img/sprite.svg#plus"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stages-registration js-tab-content active" data-tab="1">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Как оформить ипотеку</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 mb-35">
+						<div class="stages-registration-box">
+							<div class="stages-registration-box__number">1</div>
+							<div class="stages-registration-box__text">
+								<p>Подготовка документов: необходимо предоставить банку паспорт, СНИЛС, документы на приобретаемое
+									жилье, справку о доходах
+									и другие документы, которые потребуются от банка.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 mb-35">
+						<div class="stages-registration-box">
+							<div class="stages-registration-box__number">2</div>
+							<div class="stages-registration-box__text">
+								<p>Рассмотрение заявки банком: после получения документов банк проводит их проверку и рассматривает
+									заявку на кредит.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 mb-35">
+						<div class="stages-registration-box">
+							<div class="stages-registration-box__number">3</div>
+							<div class="stages-registration-box__text">
+								<p>Оценка имущества: банк проводит оценку приобретаемого имущества для определения его рыночной
+									стоимости.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 mb-35">
+						<div class="stages-registration-box">
+							<div class="stages-registration-box__number">4</div>
+							<div class="stages-registration-box__text">
+								<p>Заключение договора: если банк одобряет заявку на кредит и оценка имущества соответствует
+									требованиям, заключается
+									договор ипотеки.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="benefit">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="h1">Посчитайте вашу выгоду</div>
+						<ul class="list-radio my-ul">
+							<li>
+								<label class="radio">
+									<input type="radio" name="radio" checked>
+									<span class="radio-text">Ипотека 4%</span>
+								</label>
+							</li>
+							<li>
+								<label class="radio">
+									<input type="radio" name="radio">
+									<span class="radio-text">Семьи с детьми</span>
+								</label>
+							</li>
+							<li>
+								<label class="radio">
+									<input type="radio" name="radio">
+									<span class="radio-text">IT-специалистам</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-12 col-lg-6 d-none d-lg-block">
+						<div class="benefit-image"><img src="img/benefit.jpg" alt=""></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-4 mb-35">
+						<div class="benefit-box">
+							<div class="slider-range-wrapper slider-range-wrapper1">
+								<div class="input-title">Стоимость квартиры</div>
+
+								<input type="text" name="decimal" class="slider-range-input slider-range-input1">
+								<div class="slider-range slider-range1"></div>
+							</div>
+
+							<div class="benefit-box__value">
+								<span>2 млн. ₽</span>
+								<span>15 млн. ₽</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-4 mb-35">
+						<div class="benefit-box">
+							<div class="slider-range-wrapper slider-range-wrapper2">
+								<div class="input-title">Первоначальный взнос</div>
+
+								<input type="text" name="decimal" class="slider-range-input slider-range-input2">
+								<div class="slider-range slider-range2"></div>
+							</div>
+
+							<div class="benefit-box__value">
+								<span>300 000 ₽</span>
+								<span>5 млн. ₽</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-4 mb-35">
+						<div class="benefit-box">
+							<div class="slider-range-wrapper slider-range-wrapper3">
+								<div class="input-title">Срок кредита</div>
+
+								<input type="text" name="decimal" class="slider-range-input slider-range-input3">
+								<div class="slider-range slider-range3"></div>
+							</div>
+
+							<div class="benefit-box__value">
+								<span>5 лет</span>
+								<span>30 лет</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-start">
+						<div class="benefit-total-box">
+							<div class="benefit-total-box__left">
+								<h3>Стандартная ипотека</h3>
+								<ul class="benefit-total-box__list my-ul">
+									<li>
+										<span>Процентная ставка</span>
+										<p>6,7%</p>
+									</li>
+									<li>
+										<span>Ежемесячный платеж</span>
+										<p>22 178 ₽</p>
+									</li>
+									<li>
+										<span>Переплата</span>
+										<p>4 547 146 ₽</p>
+									</li>
+								</ul>
+							</div>
+							<div class="benefit-total-box__right">
+								<div class="benefit-total-box__value">
+									<div class="sum-value h1">0 ₽</div>
+									<div class="economy-item color-accent">без экономии</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="benefit-total-box">
+							<div class="benefit-total-box__left">
+								<h3>Ипотека 4%</h3>
+								<ul class="benefit-total-box__list my-ul">
+									<li>
+										<span>Процентная ставка</span>
+										<p>0,01%</p>
+									</li>
+									<li>
+										<span>Ежемесячный платеж</span>
+										<p>11 665 ₽</p>
+										<div class="economy-item color-green">
+											<span>Меньше на 10 513 ₽</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#figure"></use>
+											</svg>
+										</div>
+									</li>
+									<li>
+										<span>Переплата</span>
+										<p>6 310 ₽</p>
+										<div class="economy-item color-green">
+											<span>Меньше на 4 540 836 ₽</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#figure"></use>
+											</svg>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="benefit-total-box__right">
+								<div class="benefit-total-box__value">
+									<div class="sum-value h1">3 651 261 ₽</div>
+									<div class="economy-item color-green">экономия</div>
+								</div>
+								<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-accent">
+									<span>Подать запрос на одобрение</span>
+									<svg class="svg-icon svg-icon-plus">
+										<use xlink:href="img/sprite.svg#plus"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="callback">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="callback-wrapper">
+							<h2>Вы уже сейчас можете выбрать
+								и забронировать квартиру</h2>
+
+							<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-md btn-accent">
+								<span>оставить заявку</span>
+								<svg class="svg-icon svg-icon-plus">
+									<use xlink:href="img/sprite.svg#plus"></use>
+								</svg>
+							</a>
+
+							<div class="callback-wrapper__image"><img src="img/manager.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<div class="container">
+				<div class="row align-items-stretch">
+					<div class="col-12 col-lg-6">
+						<div class="footer-box">
+							<h3 class="text-uppercase">Приезжайте к нам в офис</h3>
+							<div class="box-text">
+								<p>Наши специалисты с радостью расскажут вам о проекте, помогут с выбором квартиры. Пусть сбываются ваши
+									мечты!</p>
+							</div>
+							<a href="tel:+78412708000" class="phone">8 (8412) 70-80-00</a>
+							<div class="address">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#location"></use>
+								</svg>
+								<p>Пензенская область, с. Засечное, ул. Семейная, 12к1</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="call-box">
+							<h3>или
+								напишите нам</h3>
+							<div class="box-text">
+								<p>Наши специалисты свяжутся с Вами в кратчайшие сроки и с удовольствием ответят на все ваши вопросы</p>
+							</div>
+
+							<div class="call-box__footer">
+								<a href="#" class="btn btn-accent">написать специалистам</a>
+								<ul class="list-social my-ul">
+									<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+								</ul>
+							</div>
+
+							<a href="#" target="_blank" class="link-developer">
+								<span>разработано</span>
+								<img src="img/logo-developer.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Оставить заявку</div>
+					<div class="box-text">
+						<p>оставьте ваши данные и свяжемся с вами в ближайшее время</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="телефон" name="phone" required>
+						</label>
+
+						<button type="submit" class="btn btn-accent">отправить заявку</button>
+						<div class="consent">нажимая на кнопку вы соглашаетесь на политику конфиденциальности</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
