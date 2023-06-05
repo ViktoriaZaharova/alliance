@@ -16,6 +16,25 @@
   .call-box {
     padding: 0 0 0 50px;
   }
+  .benefit-total-box {
+    margin: 0 auto 24px 0;
+  }
+  .benefit-total-box:last-child {
+    margin: 0;
+  }
+  .benefit-total-box .h1 {
+    font-size: 80px;
+  }
+  .benefit-total-box__right {
+    padding: 0 0 0 30px;
+  }
+  .investment h2 {
+    width: 100%;
+    margin: 0 0 25px;
+  }
+  .select-room .h1 {
+    font-size: 80px;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .menu {
@@ -26,6 +45,9 @@
   }
   footer .phone {
     font-size: 68px;
+  }
+  .h1 {
+    font-size: 86px;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -110,6 +132,20 @@
   .contacts-box__right .btn {
     margin: 20px 0 0;
   }
+  .variable-purchase {
+    margin: 0;
+  }
+  .h1 {
+    font-size: 70px;
+  }
+  .select-room__footer .box-text {
+    max-width: none;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .select-room .h1 {
+    font-size: 70px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .title-section {
@@ -120,11 +156,14 @@
     font-size: 18px;
     line-height: normal;
   }
-  h1 {
+  h1, .h2 {
     font-size: 40px;
   }
   h2 {
     font-size: 30px;
+  }
+  .h1 {
+    font-size: 60px;
   }
   .projects h2 {
     margin: 0 0 30px;
@@ -144,6 +183,34 @@
   .article-date {
     margin: 0 0 30px;
   }
+  .variable-purchase-item {
+    padding: 10px 20px;
+  }
+  .page-purchase h1 {
+    margin: 0 0 25px;
+  }
+  .callback-wrapper {
+    padding: 30px;
+  }
+  .callback-wrapper__image {
+    max-width: 360px;
+  }
+  .select-room .h1 {
+    font-size: 50px;
+  }
+  .objects-photo {
+    margin: 0 0 27px;
+  }
+  .object-advantages {
+    padding: 0;
+    max-width: none;
+  }
+  .object-advantages .text {
+    max-width: none;
+  }
+  .object-advantages-item__icon {
+    margin: 0 20px 0 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .title-section .box-text {
@@ -151,7 +218,7 @@
     border: none;
     margin: 30px 0 0;
   }
-  h1 {
+  h1, .h2 {
     font-size: 36px;
   }
   h3 {
@@ -220,6 +287,93 @@
   .link-toggle {
     margin: 40px auto 0;
   }
+  .benefit .mb-35 {
+    margin-bottom: 30px;
+  }
+  .benefit .h1 {
+    margin: 0 0 22px;
+  }
+  .benefit-total-box .h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  .callback {
+    margin: 46px 0 0;
+  }
+  .callback-wrapper {
+    padding: 28px 25px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .callback-wrapper h2 {
+    max-width: none;
+    margin: 0 0 26px;
+    font-size: 40px;
+  }
+  .callback-wrapper__image {
+    position: relative;
+    margin: 19px auto 0;
+    right: 0;
+  }
+  .btn-md {
+    height: 57px;
+    padding: 20px 48px;
+  }
+  .page-commercial {
+    margin: 0 0 49px;
+  }
+  .page-commercial h1 {
+    margin: 15px 0 25px;
+  }
+  .form-investment {
+    margin: 25px 0 0;
+  }
+  .select-room {
+    margin: 47px 0 35px;
+    padding: 32px 0 66px;
+  }
+  .select-room__image {
+    max-width: none;
+    margin: 0 0 35px;
+  }
+  .select-room .h1 {
+    font-size: 48px;
+  }
+  .select-room .h2 {
+    margin: 0 0 28px;
+  }
+  .select-room__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .select-room__footer .box-text {
+    margin: 0 0 18px;
+    max-width: 254px;
+    font-size: 16px;
+  }
+  .why-investment__image {
+    min-width: 630px;
+    margin: -50px -80px 0 0;
+  }
+  .why-investment {
+    margin: 80px 0 0;
+  }
+  .why-investment .h2 {
+    margin: 20px 0 40px;
+  }
+  .why-investment .stages-registration-box {
+    max-width: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   .btn {
@@ -272,7 +426,7 @@
   .nav-breadcrumb {
     margin: 0 0 30px;
   }
-  h1 {
+  h1, .h2 {
     font-size: 36px;
   }
   h3 {
@@ -286,6 +440,44 @@
   }
   .box-text p:last-child {
     margin: 0;
+  }
+  .benefit-total-box {
+    padding: 40px;
+  }
+  .benefit-total-box__left, .benefit-total-box__right {
+    width: 100%;
+    padding: 0;
+  }
+  .benefit-total-box__left .btn, .benefit-total-box__right .btn {
+    margin: 20px 0 0;
+  }
+  .benefit-total-box__left {
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+  .callback-wrapper h2 {
+    font-size: 32px;
+  }
+  .callback-wrapper .btn-md {
+    padding: 20px 48px;
+  }
+  .benefit-total-box .h1 {
+    font-size: 48px;
+  }
+  .benefit-total-box__list p {
+    font-size: 36px;
+  }
+  .slider-range-input {
+    height: 76px;
+    font-size: 30px;
+  }
+  .advantages-variable {
+    margin: 34px 0 0;
+  }
+  .advantages-variable-box {
+    padding: 32px 20px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -334,7 +526,7 @@
     min-width: 20px;
     margin: 5px 10px 0 0;
   }
-  h1 {
+  h1, .h2 {
     font-size: 30px;
   }
   h2 {
@@ -425,9 +617,39 @@
   .comparison-column__characteristics span {
     font-size: 18px;
   }
+  .benefit-total-box {
+    width: 100%;
+  }
+  .advantages-variable-box-last {
+    padding: 14px 0 0;
+  }
+  .stages-registration-box {
+    font-size: 16px;
+  }
+  .stages-registration-box__number {
+    width: 79px;
+  }
+  .stages-registration-box__text {
+    width: calc(100% - 79px);
+    padding: 20px 23px 18px 34px;
+  }
+  .stages-registration h2 {
+    font-size: 36px;
+  }
+  .stages-registration .mb-35 {
+    margin-bottom: 20px;
+  }
+  .benefit {
+    margin: 40px 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .h1, h2 {
+    font-size: 44px;
+  }
 }
 @media only screen and (max-width: 420px) {
-  h1 {
+  h1, .h2 {
     font-size: 26px;
   }
   .phone {
@@ -456,6 +678,18 @@
   .toggle-btn {
     font-size: 14px;
   }
+  .h1, h2 {
+    font-size: 36px;
+  }
+  .callback-wrapper .btn {
+    padding: 20px;
+  }
+  .callback-wrapper h2 {
+    font-size: 26px;
+  }
+  .select-room .h1 {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 370px) {
   .phone {
@@ -479,5 +713,39 @@
   .btn .svg-icon {
     width: 14px;
     height: 8px;
+  }
+  .btn .svg-icon-plus {
+    height: 16px;
+  }
+  .variable-purchase-item {
+    padding: 10px;
+  }
+  .variable-purchase-item__icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    padding: 8px;
+    margin: 0 7px 0 0;
+  }
+  .variable-purchase {
+    font-size: 11px;
+  }
+  .variable-purchase li {
+    margin: 0 8px 8px 0;
+  }
+  .benefit-total-box {
+    padding: 30px;
+  }
+  .benefit-total-box .h1 {
+    font-size: 36px;
+  }
+  .advantages-variable-box__icon {
+    margin: 0 20px 0 0;
+  }
+  .h1, h2, .select-room .h1 {
+    font-size: 30px;
+  }
+  h1, .h2 {
+    font-size: 24px;
   }
 }

@@ -118,6 +118,13 @@ button, .btn
 		outline: none
 		box-shadow: none
 
+.select-my
+	text-align: left
+	padding: 0 43px 0 22px 	
+	background: url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center	
+	background-size: 21px
+	cursor: pointer
+
 .btn
 	display: flex
 	align-items: center
@@ -137,6 +144,11 @@ button, .btn
 		width: 16px
 		height: 16px
 		min-width: 16px
+	.svg-icon-view
+		width: 16px
+		height: 12px
+		min-width: 16px	
+		fill: $accent
 
 .btn-sm
 	height: 37px
@@ -177,9 +189,13 @@ button, .btn
 .btn-grey
 	color: #707070
 	background: #EEEEEE
+	.svg-icon
+		fill: #707070
 	&:hover
 		background: $accent
 		color: #fff
+		.svg-icon-view
+			fill: #fff	
 
 .btn-group
 	.btn
@@ -210,7 +226,7 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
-h1
+h1, .h2
 	font-size: 48px
 	text-transform: uppercase
 	width: 100%
@@ -232,6 +248,9 @@ h3
 
 .text-transform-none
 	text-transform: none
+
+.font-normal
+	font-weight: normal	
 
 .nav-breadcrumb
 	margin: 0 0 50px
@@ -555,4 +574,15 @@ a.color-accent
 	&.ui-state-focus
 		box-shadow: none
 		outline: none	
+		span
+			color: #1D1D20	
 
+.slider-range__handle
+	span
+		position: absolute
+		left: 50%
+		top: 100%
+		transform: translate(-50%,0)
+		margin: 5px 0 0
+		color: #1D1D20
+		font-size: 14px		

@@ -97,3 +97,38 @@ $(".slider-range-input3").keyup(function () {
 	let sum = $(this).val();
 	$(".slider-range3").slider("value", sum);
 });
+
+$(function () {
+	var handle = $(".slider-range__handle1 span");
+	$(".slider-range4").slider({
+		animate: true,
+		range: "min",
+		value: 5,
+		min: 3,
+		max: 8,
+		create: function () {
+			handle.text($(this).slider("value"));
+		},
+		slide: function (event, ui) {
+			handle.text(ui.value);
+		}
+	});
+});
+
+$(function () {
+	var handle = $(".slider-range__handle2 span");
+	$(".slider-range5").slider({
+		animate: true,
+		range: "min",
+		value: 76,
+		min: 40,
+		max: 100,
+		create: function () {
+			handle.text($(this).slider("value"));
+		},
+		slide: function (event, ui) {
+			handle.text(ui.value);
+		}
+	});
+});
+

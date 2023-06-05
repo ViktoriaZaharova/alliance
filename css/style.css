@@ -175,6 +175,14 @@ button:hover, button:focus, .btn:hover, .btn:focus {
           box-shadow: none;
 }
 
+.select-my {
+  text-align: left;
+  padding: 0 43px 0 22px;
+  background: url("../img/arrow-select.svg") no-repeat calc(100% - 20px) center;
+  background-size: 21px;
+  cursor: pointer;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +211,12 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   width: 16px;
   height: 16px;
   min-width: 16px;
+}
+.btn .svg-icon-view {
+  width: 16px;
+  height: 12px;
+  min-width: 16px;
+  fill: #EF402F;
 }
 
 .btn-sm {
@@ -255,9 +269,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #707070;
   background: #EEEEEE;
 }
+.btn-grey .svg-icon {
+  fill: #707070;
+}
 .btn-grey:hover {
   background: #EF402F;
   color: #fff;
+}
+.btn-grey:hover .svg-icon-view {
+  fill: #fff;
 }
 
 .btn-group .btn {
@@ -296,7 +316,7 @@ ul, ol {
   list-style-type: disc;
 }
 
-h1 {
+h1, .h2 {
   font-size: 48px;
   text-transform: uppercase;
   width: 100%;
@@ -322,6 +342,10 @@ h3 {
 
 .text-transform-none {
   text-transform: none;
+}
+
+.font-normal {
+  font-weight: normal;
 }
 
 .nav-breadcrumb {
@@ -779,4 +803,18 @@ a.color-accent:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+}
+.ui-slider .ui-slider-handle.ui-state-focus span {
+  color: #1D1D20;
+}
+
+.slider-range__handle span {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin: 5px 0 0;
+  color: #1D1D20;
+  font-size: 14px;
 }

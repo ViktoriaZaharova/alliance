@@ -360,12 +360,14 @@
 	flex-wrap: wrap
 	background: #F2F2F2
 	border-radius: 10px
-	padding: 86px 685px 102px 112px
+	padding: 86px 85px 102px 112px
+	z-index: 1
 	&__image
 		position: absolute
 		right: 75px
 		bottom: 0
 		max-width: 510px
+		z-index: -1
 		@include d-flex
 	h2
 		max-width: 525px
@@ -398,6 +400,8 @@
 		text-transform: uppercase
 		color: #000
 		padding: 20px 40px
+		cursor: pointer
+		transition: .3s ease
 		&:hover
 			color: #000
 		&.active
@@ -420,6 +424,7 @@
 	border-radius: 10px
 	img
 		border-radius: 10px
+		width: 100%
 
 .benefit-image
 	margin: 0 0 65px
@@ -481,6 +486,8 @@
 // benefit
 .benefit
 	margin: 100px 0
+	.h1
+		margin: 0 0 36px
 
 .benefit-box
 	.input-title
@@ -488,6 +495,8 @@
 		width: 100%
 		font-size: 24px
 		color: #707070
+		sup
+			font-size: 10px
 	input
 		margin: 0 0 20px
 
@@ -503,7 +512,7 @@
 	display: flex
 	align-items: stretch
 	flex-wrap: wrap
-	margin: 0 73px 0 0
+	margin: 0 73px 24px 0
 	padding: 40px 30px
 	background: #FAFAFA
 	border-radius: 10px
@@ -523,7 +532,7 @@
 			font-weight: bold
 			font-size: 24px
 		.btn
-			margin: 0 0 0 auto	
+			margin: 0 0 0 auto
 	&__list
 		li
 			margin: 0 0 20px
@@ -533,17 +542,17 @@
 			color: #707070
 			font-size: 20px
 		p
-			font-size: 48px	
+			font-size: 48px
 	&__value
 		margin: auto 0
-
+	.h1
+		margin: 0
 	h3
 		margin: 0 0 30px
 		color: $accent
 		font-size: 24px
 	&:last-child
 		margin: 0
-
 
 .economy-item
 	display: flex
@@ -561,3 +570,178 @@
 		min-width: 16px
 		height: 7px
 
+// page-commercial
+.page-commercial
+	margin: 0 0 87px
+	h1
+		margin: 24px 0 43px
+
+// investment
+.investment
+	h2
+		width: fit-content
+		margin: 0 auto 0 0
+
+.form-investment
+	margin: 50px 0 0
+	width: 100%
+
+.input-title
+	color: #393839
+	width: 100%
+	display: block
+	margin: 0 0 15px
+
+.investment-box
+	.input-title
+		font-size: 16px
+	.benefit-box__value
+		margin: 10px 0 0
+		font-size: 14px
+	.slider-range
+		height: 2px
+		border-radius: 0
+		background: #7E7E7E
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: -5px
+			width: 13px
+			height: 13px
+			border-radius: 50%
+			background: $accent
+	.ui-slider-range
+		border-radius: 0
+		background: $accent
+	.ui-slider-handle
+		top: -5px
+		width: 13px
+		height: 13px
+
+// select-room
+.select-room
+	margin: 113px 0 70px
+	padding: 72px 0 94px
+	&__image
+		@include d-flex
+		max-width: 762px
+		width: 100%
+		img
+			width: 100%
+	.h2
+		margin: 0 0 70px
+	&__footer
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		.box-text
+			max-width: 322px
+			margin: 0 40px 0 0
+
+.why-investment
+	overflow-x: hidden
+	margin: 70px 0 110px
+	&__image
+		@include d-flex
+		min-width: 1356px
+		margin: 130px -176px 0 0
+		float: right
+		z-index: -1
+		position: relative
+	.h2
+		margin: 30px 0 50px
+	.stages-registration-box
+		margin: 0 0 30px
+		max-width: 845px
+		height: auto
+		&:last-child
+			margin: 0
+
+.nav-tabs
+	width: 100%
+
+.objects
+	h2
+		margin: 0 0 50px
+
+.nav-tabs
+	border: none
+	border-radius: 0
+	align-items: flex-start
+	justify-content: flex-start
+	.nav-tabs-objects
+		margin: 0 30px 30px 0
+		display: flex
+		align-items: center
+		border: 1px solid #9E9E9E
+		border-radius: 10px
+		width: 407px
+		color: #707070
+		font-size: 20px
+		background: #fff
+		padding: 0
+		text-align: left
+		&__text
+			width: calc(100% - 166px)
+			padding: 0 0 0 40px
+		&__image
+			width: 166px
+			height: 100%
+			@include d-flex
+			border-radius: 10px
+			img
+				border-radius: 10px
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&:last-child
+			margin: 0 0 20px
+		&.active
+			border-color: transparent
+			box-shadow: 0px 35px 55px rgba(0, 0, 0, 0.15)
+			color: #000
+
+.tab-content
+	margin: 65px 0 0 0
+
+.objects-photo
+	@include d-flex
+	border-radius: 10px
+	max-width: none
+	width: 100%
+	img
+		width: 100%
+		border-radius: 10px
+
+.objects-content
+	.box-text
+		margin: 0 0 32px
+		font-size: 20px
+
+.object-advantages
+	padding: 0 0 0 35px
+	max-width: 480px
+
+.object-advantages-item
+	display: flex
+	align-items: flex-start
+	margin: 0 0 40px
+	font-size: 20px
+	&__icon
+		border: 1px solid #EF402F
+		border-radius: 50%
+		@include d-flex
+		margin: 0 34px 0 0
+		width: 48px
+		height: 48px
+		min-width: 48px
+	&:last-child
+		margin: 0
+	h3
+		font-size: 24px
+		margin: 0 0 9px
+	.btn
+		margin: 12px 0 0
+	.text
+		max-width: 325px
