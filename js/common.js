@@ -148,3 +148,19 @@ $(function () {
 	});
 });
 
+$(function () {
+	var handle = $(".slider-range__handle3 span");
+	$(".slider-range6").slider({
+		animate: true,
+		range: "min",
+		value: 4,
+		min: 1,
+		max: 10,
+		create: function () {
+			handle.text($(this).slider("value"));
+		},
+		slide: function (event, ui) {
+			handle.text(ui.value);
+		}
+	});
+});

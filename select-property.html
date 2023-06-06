@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Альянс - группа помпаний</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-center">
+						<a href="index.html" class="logo">
+							<img src="img/logo.svg" alt="" class="d-none d-sm-block">
+							<img src="img/logo-mobile.svg" alt="" class="d-block d-sm-none">
+						</a>
+
+						<nav class="nav-menu">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+							<ul class="menu my-ul">
+								<li><a href="objects.html">объекты</a></li>
+								<li><a href="commercial.html">коммерческая недвижимость</a></li>
+								<li><a href="purchase-methods.html">способы покупки</a></li>
+								<li><a href="about.html">о нас</a></li>
+								<li><a href="contacts.html">контакты</a></li>
+							</ul>
+
+							<div class="schedule">
+								<span>офис продаж:</span>
+								<p>9:00-18:00</p>
+							</div>
+
+							<div class="user-navigation btn-group">
+								<a href="#" class="user-navigation__link">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</a>
+								<a href="#" class="user-navigation__link">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#comparison"></use>
+									</svg>
+								</a>
+							</div>
+
+							<a href="#" class="btn btn-callback btn-sm btn-border-grey" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать
+								звонок</a>
+
+							<a href="tel:+78412708080" class="phone">+7 (8412) 70-80-80</a>
+
+							<ul class="list-social my-ul">
+								<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+							</ul>
+						</nav>
+
+						<div class="schedule">
+							<span>офис продаж:</span>
+							<p>9:00-18:00</p>
+						</div>
+
+						<div class="user-navigation btn-group">
+							<a href="#" class="user-navigation__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#heart"></use>
+								</svg>
+							</a>
+							<a href="#" class="user-navigation__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#comparison"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="btn-group">
+							<a href="#" class="btn btn-sm btn-border-accent btn-mortgage">ипотека от 4%</a>
+							<a href="#" class="btn btn-sm btn-border-grey" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать звонок</a>
+						</div>
+						<a href="tel:+78412708080" class="phone">+7 (8412) 70-80-80</a>
+
+						<div class="btn-burger">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#burger"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page page-select-property">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="nav-breadcrumb">
+							<ul class="breadcrumb my-ul">
+								<li><a href="index.html">Главная</a></li>
+								<li><span>Выбрать недвижимость</span></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="col-12 d-block d-sm-none">
+						<h1 class="text-transform-none"></h1>
+					</div>
+				</div>
+			</div>
+
+			<form method="post" class="bg-grey select-property-wrapper">
+				<div class="container">
+					<div class="row align-items-end">
+						<div class="col-12 d-none d-sm-block">
+							<h1 class="text-transform-none">Выбрать недвижимость</h1>
+						</div>
+
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-45">
+							<label>
+								<div class="input-title">Тип недвижимости</div>
+								<select name="select" class="select-my">
+									<option value="любой тип">любой тип</option>
+									<option value="любой тип">любой тип</option>
+									<option value="любой тип">любой тип</option>
+								</select>
+							</label>
+						</div>
+
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-45">
+							<label>
+								<div class="input-title">Отделка</div>
+								<select name="select" class="select-my">
+									<option value="любая">любая</option>
+									<option value="любая">любая</option>
+									<option value="любая">любая</option>
+								</select>
+							</label>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-45">
+							<label>
+								<div class="input-title">Жилой комплекс</div>
+								<select name="select" class="select-my">
+									<option value="любой">любой</option>
+									<option value="любой">любой</option>
+									<option value="любой">любой</option>
+								</select>
+							</label>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-45">
+							<label>
+								<div class="input-title">Готовность</div>
+								<select name="select" class="select-my">
+									<option value="любая">любая</option>
+									<option value="любая">любая</option>
+									<option value="любая">любая</option>
+								</select>
+							</label>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-45">
+							<label>
+								<div class="input-title">Вид из окна</div>
+								<select name="select" class="select-my">
+									<option value="любой">любой</option>
+									<option value="любой">любой</option>
+									<option value="любой">любой</option>
+								</select>
+							</label>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-45">
+							<a href="#" class="btn btn-accent btn-clear">
+								<span>сбросить все фильтры</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="col-12 col-xl-6 col-xxl-4 mb-60">
+							<div class="room-box">
+								<p>Комнатность</p>
+
+								<ul class="list-room list-radio my-ul">
+									<li>
+										<label class="radio radio-room">
+											<input type="radio" name="radio" checked>
+											<span class="radio-text">студия</span>
+										</label>
+									</li>
+									<li>
+										<label class="radio radio-room">
+											<input type="radio" name="radio">
+											<span class="radio-text">1</span>
+										</label>
+									</li>
+									<li>
+										<label class="radio radio-room">
+											<input type="radio" name="radio">
+											<span class="radio-text">2</span>
+										</label>
+									</li>
+									<li>
+										<label class="radio radio-room">
+											<input type="radio" name="radio">
+											<span class="radio-text">3</span>
+										</label>
+									</li>
+									<li>
+										<label class="radio radio-room">
+											<input type="radio" name="radio">
+											<span class="radio-text">4+</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-12 col-xl-6 col-xxl-2 mb-60">
+							<div class="benefit-box investment-box">
+								<div class="slider-range-wrapper slider-range-wrapper4">
+									<div class="input-title">Стоимость, млн. ₽</div>
+
+									<div class="slider-range slider-range4">
+										<div class="slider-range__handle ui-slider-handle slider-range__handle1">
+											<span></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="benefit-box__value">
+									<span>3,4</span>
+									<span>8,2</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-xl-6 col-xxl-2 mb-60">
+							<div class="benefit-box investment-box">
+								<div class="slider-range-wrapper slider-range-wrapper5">
+									<div class="input-title">Площадь, м<sup>2</sup></div>
+
+									<div class="slider-range slider-range5">
+										<div class="slider-range__handle ui-slider-handle slider-range__handle2">
+											<span></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="benefit-box__value">
+									<span>40</span>
+									<span>100</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-xl-6 col-xxl-2 mb-60">
+							<div class="benefit-box investment-box">
+								<div class="slider-range-wrapper slider-range-wrapper6">
+									<div class="input-title">Этаж</div>
+
+									<div class="slider-range slider-range6">
+										<div class="slider-range__handle ui-slider-handle slider-range__handle3">
+											<span></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="benefit-box__value">
+									<span>1</span>
+									<span>10+</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="options-line">
+								<div class="options-line-box">
+									<div class="options-line-box__head">
+										<div class="input-title">Количество санузлов</div>
+									</div>
+									<div class="options-line-box__body">
+										<ul class="list-radio my-ul list-radio-my">
+											<li>
+												<label class="radio radio-my">
+													<input type="radio" name="radio1" checked>
+													<span class="radio-custom"></span>
+													<span class="radio-text">один</span>
+												</label>
+											</li>
+											<li>
+												<label class="radio radio-my">
+													<input type="radio" name="radio1">
+													<span class="radio-custom"></span>
+													<span class="radio-text">два и более</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="options-line-box">
+									<div class="options-line-box__head">
+										<div class="input-title">Преимущества</div>
+									</div>
+									<div class="options-line-box__body">
+										<ul class="list-radio my-ul list-radio-my">
+											<li>
+												<label class="radio radio-my">
+													<input type="radio" name="radio2" checked>
+													<span class="radio-custom"></span>
+													<span class="radio-text">с терассой</span>
+												</label>
+											</li>
+											<li>
+												<label class="radio radio-my">
+													<input type="radio" name="radio2">
+													<span class="radio-custom"></span>
+													<span class="radio-text">гардеробная</span>
+												</label>
+											</li>
+											<li>
+												<label class="radio radio-my">
+													<input type="radio" name="radio2">
+													<span class="radio-custom"></span>
+													<span class="radio-text">лоджия</span>
+												</label>
+											</li>
+											<li>
+												<label class="radio radio-my">
+													<input type="radio" name="radio2">
+													<span class="radio-custom"></span>
+													<span class="radio-text">видовая</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="options-line-box">
+									<div class="options-line-box__head">
+										<div class="input-title">Предложение месяца</div>
+									</div>
+									<div class="options-line-box__body">
+										<div class="toggle-btn">
+											<div class="toggle-btn__text">скрыть</div>
+											<input type="checkbox" checked="" class="cb-value">
+											<span class="round-btn"></span>
+											<div class="toggle-btn__text">показать</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-12">
+							<a href="#" class="btn btn-white btn-option">
+								<span>дополнительные параметры</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</form>
+		</section>
+
+
+
+		<div class="products products-similar">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-6">
+						<div class="sorting-box">
+							<p>сортировать</p>
+							<select name="select" class="select-my">
+								<option value="по цене">по цене</option>
+								<option value="по алфавиту">по алфавиту</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-6 d-block d-sm-none">
+						<a href="#" class="btn btn-accent btn-filter">
+							<span>все фильтры</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="search-value color-accent">найдено 122 квартиры</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 col-xl-3 mb-30">
+						<div class="product-card">
+							<div class="product-card__head">
+								<a href="product.html" class="product-card__name">
+									<span>ЖК «Семейный»</span>
+									<span>13 стр.</span>
+								</a>
+								<div class="user-navigation btn-group">
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart"></use>
+										</svg>
+									</a>
+									<a href="#" class="user-navigation__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#comparison"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="product-card__image">
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="product.html" class="product-card__image-item"><img src="img/product1.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<ul class="list-characteristics my-ul">
+									<li>
+										<p>Студия</p>
+										<p>6/10 этаж</p>
+									</li>
+									<li>
+										<p>21,4 м<sup>2</sup></p>
+										<p>1 кв. 2023</p>
+									</li>
+								</ul>
+
+								<div class="product-card__price-wrapper">
+									<div class="price-all">
+										<div class="price">от 2 840 880 ₽</div>
+										<div class="mortgage">ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<div class="economy-item color-green">
+										<span>цена снижена</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#figure"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="btn btn-sm benefit-box-option bg-light-green">выгода до 11%</div>
+								<a href="product.html" class="btn btn-sm btn-accent">подробнее</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="btn-group-navigation">
+							<div class="viewed">
+								<p>вы просмотрели
+									<span>8 из 122 квартир</span>
+								</p>
+							</div>
+							<a href="#" class="btn btn-toggle btn-accent">показать еще</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row align-items-stretch">
+				<div class="col-12 col-lg-6">
+					<div class="footer-box">
+						<h3 class="text-uppercase">Приезжайте к нам в офис</h3>
+						<div class="box-text">
+							<p>Наши специалисты с радостью расскажут вам о проекте, помогут с выбором квартиры. Пусть сбываются ваши
+								мечты!</p>
+						</div>
+						<a href="tel:+78412708000" class="phone">8 (8412) 70-80-00</a>
+						<div class="address">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#location"></use>
+							</svg>
+							<p>Пензенская область, с. Засечное, ул. Семейная, 12к1</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="call-box">
+						<h3>или
+							напишите нам</h3>
+						<div class="box-text">
+							<p>Наши специалисты свяжутся с Вами в кратчайшие сроки и с удовольствием ответят на все ваши вопросы</p>
+						</div>
+
+						<div class="call-box__footer">
+							<a href="#" class="btn btn-accent">написать специалистам</a>
+							<ul class="list-social my-ul">
+								<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+							</ul>
+						</div>
+
+						<a href="#" target="_blank" class="link-developer">
+							<span>разработано</span>
+							<img src="img/logo-developer.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Оставить заявку</div>
+					<div class="box-text">
+						<p>оставьте ваши данные и свяжемся с вами в ближайшее время</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="телефон" name="phone" required>
+						</label>
+
+						<button type="submit" class="btn btn-accent">отправить заявку</button>
+						<div class="consent">нажимая на кнопку вы соглашаетесь на политику конфиденциальности</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

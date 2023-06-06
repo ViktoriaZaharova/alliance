@@ -120,7 +120,7 @@
     max-width: 400px;
   }
   footer {
-    padding: 60px 0 50px;
+    padding: 30px 0 50px;
     font-size: 20px;
   }
   footer h3 {
@@ -323,7 +323,7 @@
     display: none;
   }
   footer {
-    padding: 65px 0 30px;
+    padding: 35px 0 30px;
     font-size: 18px;
   }
   footer .phone {
@@ -994,7 +994,7 @@
 }
 @media only screen and (max-width: 370px) {
   .phone {
-    font-size: 14px;
+    font-size: 13px;
   }
   .btn-burger {
     width: 20px;
@@ -1049,7 +1049,23 @@
   h1, .h2 {
     font-size: 24px;
   }
+  .btn {
+    padding: 10px;
+  }
   .nav-tabs .nav-tabs-objects__text {
     padding: 0 0 0 10px;
+  }
+  .product-card {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .product-card .economy-item {
+    font-size: 10px;
+  }
+  .product-card__price-wrapper .price {
+    font-size: 14px;
+  }
+  .family-advantages-box {
+    font-size: 16px;
   }
 }

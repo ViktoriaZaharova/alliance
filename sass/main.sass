@@ -1115,3 +1115,143 @@
 			height: 16px
 			margin: 0 0 0 19px
 			fill: #707070
+
+// page-select-property
+.page-select-property
+	margin: 0 0 40px
+	h1
+		margin: 0 0 40px
+
+.btn-option
+	margin: 0 auto
+	border-radius: 10px 10px 0px 0px
+	padding: 20px 48px
+
+.select-property-wrapper
+	padding: 30px 0 0
+	box-shadow: inset 0px 35px 55px rgba(0, 0, 0, 0.05)
+
+.btn-group-navigation
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	margin: 30px 0 0
+	.btn
+		margin: 0
+		max-width: 255px
+		width: 100%
+
+.viewed
+	margin: 0 47px 0 0
+	font-size: 20px
+	color: #707070
+	span
+		display: block
+		color: #000
+
+.sorting-box
+	display: flex
+	align-items: center
+	margin: 0 0 40px
+	select
+		width: fit-content
+	p
+		color: #393839
+		margin: 0 15px 0 0
+
+.search-value
+	text-align: right
+	font-size: 14px
+	font-weight: 500
+
+.room-box
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	p
+		color: #393839
+
+.list-room
+	width: fit-content
+	margin: 0 0 0 22px
+	li
+		margin: 0 15px 0 0
+		&:last-child
+			margin: 0
+
+.radio-room
+	padding: 20px 23px
+	font-size: 20px
+
+	input
+		background: #F9F9F9
+		border-radius: 10px
+		border: none
+		z-index: 1
+		cursor: pointer
+		&:checked
+			box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.15)
+			background: #E4E4E4
+			+.radio-text
+			color: #000000
+	.radio-text
+		position: relative
+		z-index: 1
+		display: block
+
+.options-line
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin: 0 0 57px
+
+.options-line-box
+	padding: 0 48px 0 0
+	margin: 0 48px 0 0
+	border-right: 1px solid #707070
+	&:last-child
+		border: none
+		padding: 0
+		margin: 0
+	.list-radio
+		li
+			margin: 0 30px 0 0
+			&:last-child
+				margin: 0 
+	.round-btn
+		background: #EEEEEE
+		&::before
+			background: $accent			
+
+.radio-my
+	padding: 0
+	font-size: 20px
+	font-weight: normal
+	input
+		display: none
+		&:checked
+			+.radio-custom
+				&::before
+					background: $accent
+	.radio-custom
+		border-radius: 50%
+		border: 1px solid #9E9E9E
+		width: 20px
+		height: 20px
+		min-width: 20px
+		margin: 0 10px 0 0
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			width: 12px
+			height: 12px
+			border-radius: 50%
+			transition: .3s ease
+
+

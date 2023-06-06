@@ -194,10 +194,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 10px 33px;
+  padding: 18px 33px;
   font-size: 14px;
   font-weight: 500;
-  height: 57px;
   border-radius: 10px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -285,6 +284,24 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 .btn-grey:hover .svg-icon-heart {
   fill: none;
+  stroke: #fff;
+}
+
+.btn-white {
+  -webkit-box-shadow: 0px -15px 24px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px -15px 24px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  color: #EF402F;
+}
+.btn-white .svg-icon {
+  fill: none;
+  stroke: #EF402F;
+}
+.btn-white:hover {
+  color: #fff;
+  background: #EF402F;
+}
+.btn-white:hover .svg-icon {
   stroke: #fff;
 }
 
@@ -442,6 +459,10 @@ h3 {
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
 }
 
 .mb-50 {
