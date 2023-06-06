@@ -26,8 +26,8 @@ $('.product-card__image').slick({
 	fade: true,
 	dots: true,
 	arrows: false,
-	autoplay: true,
-	autoplaySpeed: 2000,
+	// autoplay: true,
+	// autoplaySpeed: 2000,
 });
 
 $(".cb-value").click(function () {
