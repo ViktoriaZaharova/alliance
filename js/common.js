@@ -14,6 +14,22 @@ $('.article-gallery').slick({
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
 
+$('.about-family-slider').slick({
+	slidesToshow: 1,
+	fade: true,
+	dots: true,
+	arrows: false
+});
+
+$('.product-card__image').slick({
+	slidesToshow: 1,
+	fade: true,
+	dots: true,
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 2000,
+});
+
 $(".cb-value").click(function () {
 	var mainParent = $(".toggle-btn");
 	if ($(mainParent).find("input.cb-value").is(":checked")) {

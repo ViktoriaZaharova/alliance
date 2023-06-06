@@ -49,6 +49,9 @@
   .h1 {
     font-size: 86px;
   }
+  .about-advantages-box p {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .projects-card {
@@ -146,6 +149,9 @@
   .select-room .h1 {
     font-size: 70px;
   }
+  .about-advantages-box p {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .title-section {
@@ -210,6 +216,41 @@
   }
   .object-advantages-item__icon {
     margin: 0 20px 0 0;
+  }
+  .page-family .h1 {
+    margin: 0 0 27px;
+    text-transform: none;
+  }
+  .page-family-banner {
+    margin: 0 0 28px;
+  }
+  .page-family-banner .btn {
+    margin: 35px 0 0 auto;
+  }
+  .about-family .nav-tabs {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about-family .nav-tabs .box-text {
+    margin: 0 0 58px;
+  }
+  .about-advantages {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about-advantages-box p {
+    font-size: 48px;
+  }
+  .about-family-slider {
+    margin: 55px auto;
+  }
+  .documents {
+    margin: 68px 0 0;
+  }
+  .documents h2 {
+    font-size: 36px;
+    margin: 0 0 35px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -479,6 +520,22 @@
   .advantages-variable-box {
     padding: 32px 20px;
   }
+  .nav-tabs .nav-tabs-objects {
+    width: 100%;
+    margin: 0 0 28px;
+  }
+  .nav-tabs .nav-tabs-objects:last-child {
+    margin: 0;
+  }
+  .tab-content {
+    margin: 48px 0 0;
+  }
+  .nav-tabs-my .nav-item {
+    margin: 0 20px 20px 0;
+  }
+  .nav-tabs-my .nav-item:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   header .btn {
@@ -642,6 +699,35 @@
   .benefit {
     margin: 40px 0;
   }
+  .about-advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about-advantages-box {
+    text-align: left;
+  }
+  .about-advantages-box span {
+    text-align: center;
+  }
+  .about-family .h2 {
+    font-size: 36px;
+  }
+  .products .nav-tabs-my {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .document-box {
+    padding: 30px 25px;
+  }
+  .document-box__icon {
+    margin: 0 25px 0 0;
+  }
 }
 @media only screen and (max-width: 480px) {
   .h1, h2 {
@@ -689,6 +775,29 @@
   }
   .select-room .h1 {
     font-size: 36px;
+  }
+  .family-advantages-box__img {
+    width: 140px;
+    height: 140px;
+  }
+  .family-advantages-box__text {
+    padding: 0 0 0 15px;
+    width: calc(100% - 140px);
+  }
+  .product-card__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-card__footer .btn {
+    margin: 0 0 15px;
+  }
+  .product-card__footer .btn:last-child {
+    margin: 0;
+  }
+  .benefit-box {
+    font-size: 10px;
   }
 }
 @media only screen and (max-width: 370px) {
@@ -747,5 +856,8 @@
   }
   h1, .h2 {
     font-size: 24px;
+  }
+  .nav-tabs .nav-tabs-objects__text {
+    padding: 0 0 0 10px;
   }
 }
