@@ -1,6 +1,11 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1720px)
+	.list-room
+		width: 100%
+		margin: 10px 0 0
+
 @media only screen and (max-width: 1650px)
 	header
 		.btn-group
@@ -37,7 +42,7 @@
 
 	.cost-from-box
 		padding: 0 0 0 20px
-		margin: 0 0 0 20px		
+		margin: 0 0 0 20px
 
 @media only screen and (max-width: 1500px)
 	.menu
@@ -56,7 +61,7 @@
 		font-size: 40px
 
 	.product-information-details
-		padding: 30px	
+		padding: 30px
 
 @media only screen and (max-width: 1400px)
 	.projects-card
@@ -152,7 +157,14 @@
 			left: 0
 			width: 119px
 			height: 1px
-			background: #EF402F	
+			background: #EF402F
+
+	.options-line-box
+		margin: 0 20px 20px 0
+		padding: 0 20px 0 0
+		&:last-child
+			padding: 0
+			margin: 0 0 20px
 
 @media only screen and (max-width: 1200px)
 	.title-section
@@ -232,7 +244,7 @@
 			.box-text
 				margin: 0 0 58px
 		.h1
-			margin: 0 0 20px		
+			margin: 0 0 20px
 
 	.about-advantages
 		justify-content: space-around
@@ -245,13 +257,13 @@
 	.documents
 		margin: 68px 0 0
 		h2
-			font-size: 36px	
+			font-size: 36px
 			margin: 0 0 35px
 
-	.page-product 
+	.page-product
 		h1
 			margin: 0 0 30px
-			
+
 	.product-tools
 		justify-content: flex-start
 		margin: 20px 0 0
@@ -266,7 +278,7 @@
 		margin: 27px 0 0
 		padding: 20px
 		&__body
-			margin: 20px 0 32px		
+			margin: 20px 0 32px
 
 	.products-similar
 		margin: 50px 0
@@ -410,7 +422,7 @@
 
 	.page-product h1
 		sup
-			font-size: 20px		
+			font-size: 20px
 
 @media only screen and (max-width: 768px)
 	.btn
@@ -514,20 +526,28 @@
 	.nav-tabs-my .nav-item
 		margin: 0 20px 20px 0
 		&:last-child
-			margin: 0	
+			margin: 0
 
 	.product-information-gallery__direction
 		max-width: 88px
 
 	.product-information-gallery__image
-		max-width: 300px			
+		max-width: 300px
 
 	.product-card__footer
 		flex-direction: column
 		.btn
 			margin: 0 0 15px
 			&:last-child
-				margin: 0	
+				margin: 0
+
+	.mb-45
+		margin-bottom: 30px
+
+	.options-line-box .list-radio li
+		margin: 0 10px 10px 0
+		&:last-child
+			margin: 0 0 10px
 
 @media only screen and (max-width: 576px)
 	.container
@@ -536,7 +556,7 @@
 	.row
 		margin: 0 -11px
 		>*
-			padding: 0 11px	
+			padding: 0 11px
 
 	header
 		.btn
@@ -704,14 +724,14 @@
 
 	.products .nav-tabs-my
 		justify-content: flex-start
-	
+
 	.document-box
 		padding: 30px 25px
 		&__icon
 			margin: 0 25px 0 0
 
 	.product-information-gallery__image
-		max-width: 246px		
+		max-width: 246px
 
 	.list-option
 		width: 100%
@@ -730,7 +750,7 @@
 			p
 				margin: 0 0 10px
 		&__head
-			align-items: flex-start		
+			align-items: flex-start
 		&__name
 			font-size: 10px
 			span
@@ -758,20 +778,20 @@
 					background: #000
 		&__image
 			margin: 23px 0 10px
-			padding: 0 0 12px	
+			padding: 0 0 12px
 		&__price-wrapper
 			margin: 24px 0 0
 			.price
-				font-size: 16px	
+				font-size: 16px
 		.economy-item
 			font-size: 12px
 		&__footer
 			margin: 19px 0 0
-				
+
 	.benefit-box-option
 		font-size: 10px
 		padding: 10px 14px
-		height: 32px			
+		height: 32px
 
 	.product-card__image .slick-dots li
 		width: 30px
@@ -780,7 +800,7 @@
 	.user-navigation__link
 		width: 16px
 		height: 14px
-		margin: 0 15px 0 0		
+		margin: 0 15px 0 0
 
 	.product-line-subtitle .product-card__name
 		span
@@ -795,7 +815,66 @@
 			&::before
 				width: 1px
 				height: 100%
-				background: #EF402F	
+				background: #EF402F
+
+	.options-line-box
+		padding: 0
+		border: none
+		margin: 0 0 20px
+		width: 100%
+		&:last-child
+			margin: 0
+
+	.select-property-wrapper
+		position: fixed
+		left: 0
+		top: 0
+		z-index: 10
+		width: 100%
+		max-width: 280px
+		height: 100%
+		overflow-y: auto
+		padding: 30px 0
+		display: none
+		.mb-60
+			margin-bottom: 30px
+		&__close
+			display: flex
+			align-items: center
+			justify-content: center
+
+	.options-line-box .list-radio li
+		width: 100%
+
+	.list-room li
+		margin: 0 10px 10px 0
+		&:last-child
+			margin: 0 0 10px
+
+	.page-select-property
+		h1
+			margin: 0
+
+	.btn-option
+		border-radius: 10px
+
+	.sorting-box
+		flex-direction: column
+		align-items: flex-start
+		margin: 0 0 30px
+		p
+			margin: 0 0 15px
+
+	.search-value
+		text-align: left
+
+	.btn-group-navigation
+		flex-direction: column
+		align-items: center
+		margin: 20px auto 0
+
+	.viewed
+		margin: 0 auto 47px
 
 @media only screen and (max-width: 480px)
 	.h1, h2
@@ -843,7 +922,7 @@
 		font-size: 36px
 
 	.family-advantages-box
-		&__img	
+		&__img
 			width: 140px
 			height: 140px
 		&__text
@@ -855,14 +934,21 @@
 		.btn
 			margin: 0 0 15px
 			&:last-child
-				margin: 0		
+				margin: 0
 
 	.benefit-box
-		font-size: 10px		
+		font-size: 10px
 
 	.page-product h1
 		sup
-			font-size: 14px	
+			font-size: 14px
+
+	.btn-filter
+		padding: 10px
+		.svg-icon
+			height: 12px
+			width: 14px
+			min-width: 14px
 
 @media only screen and (max-width: 370px)
 	.phone
@@ -921,14 +1007,14 @@
 		font-size: 24px
 
 	.btn
-		padding: 10px	
+		padding: 10px
 
 	.nav-tabs .nav-tabs-objects__text
 		padding: 0 0 0 10px
 
 	.product-card
 		font-size: 10px
-		padding: 10px	
+		padding: 10px
 		.economy-item
 			font-size: 10px
 		&__price-wrapper
@@ -936,6 +1022,9 @@
 				font-size: 14px
 
 	.family-advantages-box
-		font-size: 16px				
+		font-size: 16px
 
-
+	.btn-filter .svg-icon
+		height: 12px
+		width: 14px
+		min-width: 14px

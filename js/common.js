@@ -114,6 +114,7 @@ $(".slider-range-input3").keyup(function () {
 	$(".slider-range3").slider("value", sum);
 });
 
+
 $(function () {
 	var handle = $(".slider-range__handle1 span");
 	$(".slider-range4").slider({
@@ -163,4 +164,29 @@ $(function () {
 			handle.text(ui.value);
 		}
 	});
+});
+
+$(function () {
+	var handle = $(".slider-range__handle4 span");
+	$(".slider-range7").slider({
+		animate: true,
+		range: "min",
+		value: 15000000,
+		min: 2000000,
+		max: 25000000,
+		create: function () {
+			handle.text($(this).slider("value") + '₽');
+		},
+		slide: function (event, ui) {
+			handle.text(ui.value + '₽');
+		}
+	});
+});
+
+$('.btn-filter').click(function () {
+	$('.select-property-wrapper').fadeToggle();
+});
+
+$('.select-property-wrapper__close').click(function () {
+	$('.select-property-wrapper').fadeOut();
 });

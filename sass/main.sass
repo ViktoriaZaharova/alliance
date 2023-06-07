@@ -1,5 +1,25 @@
-@import "fonts"
 @import "vars"
+
+.choose-home
+	h2
+		margin: 0 0 40px
+
+.choose-home-form
+	font-size: 14px
+	.list-room
+		font-size: 14px
+		margin: 0
+	.radio-room
+		font-size: 14px
+		padding: 15px 20px
+		input
+			border: 1px solid #9E9E9E
+			background: transparent
+			border-radius: 10px
+	select
+		font-size: 14px
+	[type="submit"]
+		padding: 20px 94px	
 
 .title-section
 	padding: 70px 0 83px
@@ -18,42 +38,106 @@
 		border-left: 1px solid #9E9E9E
 		padding: 0 0 30px 130px
 
-.projects
-	margin: 57px 0 113px
+.payment-options
 	h2
-		margin: 0 0 60px
+		margin: 0 0 30px
+
+.payment-options-line
+	width: 100%
+	transition: .3s ease
+	cursor: pointer
+	margin: 0 0 20px
+	background: #FAFAFA
+	border-radius: 10px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	padding: 32px 35px
+	&:last-child
+		margin: 0
+	&__icon
+		@include d-flex
+		border-radius: 50%
+		fill: none
+		stroke: #000
+		border: 1px solid #000000
+		width: 74px
+		height: 74px
+		min-width: 74px
+		padding: 15px
+		margin: 0 37px 0 0
+	&__title
+		padding: 0 30px 0 0
+		margin: 0 30px 0 0
+		border-right: 1px solid #000000
+	.h1
+		margin: 0
+		color: $accent
+	&__description
+		max-width: 486px
+	&:hover
+		box-shadow: 0px 35px 55px rgba(0, 0, 0, 0.15)
+		background: #fff
+
+.projects
+	margin: 48px 0 100px
 
 .projects-card
+	position: relative
+	z-index: 1
+	border-radius: 10px
 	width: 100%
-	max-width: 408px
-	margin: 0 60px 30px 0
-	&:last-child
-		margin: 0 0 30px
-	&__title
-		color: #000
-		margin: 0 0 30px
-		text-transform: uppercase
-		font-weight: bold
-		font-size: 20px
-		&:hover
-			color: $accent
+	height: 554px
+
+	.list-labels
+		position: absolute
+		width: 100%
+		padding: 24px 17px
+		left: 0
+		top: 0
+		li
+			margin: 0 10px 10px 0
+
+		.btn
+			background: rgba(255, 255, 255, 0.5)
+			backdrop-filter: blur(7.5px)
+
 	&__img
 		width: 100%
-		height: 240px
+		height: 100%
 		@include d-flex
 		img
 			width: 100%
 			height: 100%
 			object-fit: cover
+			border-radius: 10px
 	&__body
 		width: 100%
 		display: flex
-		align-items: center
+		align-items: flex-end
 		justify-content: space-between
 		flex-wrap: wrap
-		margin: 30px 0 0
-	&__link
+		padding: 0 27px 30px 0
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+	&__title
+		color: #fff
 		font-size: 20px
+		padding: 20px 34px 27px 22px
+		background: rgba(0, 0, 0, 0.6)
+		backdrop-filter: blur(7.5px)
+		border-radius: 0px 10px 10px 0px
+		font-size: 40px
+		span
+			display: block
+			font-size: 20px
+			margin: 10px 0 0
+		&:hover
+			color: $accent
+	.btn
+		padding: 18px 20px
 
 // page-information
 .page-information
@@ -1130,6 +1214,23 @@
 .select-property-wrapper
 	padding: 30px 0 0
 	box-shadow: inset 0px 35px 55px rgba(0, 0, 0, 0.05)
+	font-size: 16px
+	.btn
+		width: 100%
+		margin: 0 auto
+	.btn-option
+		width: fit-content
+	select
+		font-size: 20px
+	&__close
+		fill: $accent
+		width: 20px
+		height: 20px
+		cursor: pointer
+		display: none
+		position: absolute
+		right: 10px
+		top: 10px
 
 .btn-group-navigation
 	display: flex
@@ -1164,6 +1265,7 @@
 	text-align: right
 	font-size: 14px
 	font-weight: 500
+	margin: 0 0 30px
 
 .room-box
 	display: flex
@@ -1193,8 +1295,8 @@
 		&:checked
 			box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.15)
 			background: #E4E4E4
-			+.radio-text
-			color: #000000
+			+ .radio-text
+				color: #000000
 	.radio-text
 		position: relative
 		z-index: 1
@@ -1219,11 +1321,11 @@
 		li
 			margin: 0 30px 0 0
 			&:last-child
-				margin: 0 
+				margin: 0
 	.round-btn
 		background: #EEEEEE
 		&::before
-			background: $accent			
+			background: $accent
 
 .radio-my
 	padding: 0
@@ -1233,8 +1335,8 @@
 		display: none
 		&:checked
 			+.radio-custom
-				&::before
-					background: $accent
+			&::before
+				background: $accent
 	.radio-custom
 		border-radius: 50%
 		border: 1px solid #9E9E9E
@@ -1254,4 +1356,14 @@
 			border-radius: 50%
 			transition: .3s ease
 
+.btn-filter
+	width: 100%
+	height: 54px
+	padding: 10px
+	.svg-icon
+		width: 16px
+		height: 18px
+		min-width: 16px
 
+.select-building
+	margin: 100px 0 50px

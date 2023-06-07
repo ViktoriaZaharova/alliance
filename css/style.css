@@ -183,6 +183,11 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   cursor: pointer;
 }
 
+.select-my2 {
+  background: url("../img/arrow-select-black.svg") no-repeat calc(100% - 20px) center;
+  background-size: 21px;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;

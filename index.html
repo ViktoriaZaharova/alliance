@@ -166,61 +166,451 @@
 			</div>
 		</main>
 
-		<section class="title-section bg-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-lg-6">
-						<h1><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#info"></use>
-							</svg>работаем над новой версией сайта</h1>
-					</div>
-					<div class="col-12 col-lg-5">
-						<div class="box-text">
-							<p>Строительная компания «АЛЬЯНС» успешно работает на российском рынке с 2012 года и является одним из
-								лидеров в
-								девелопменте жилой и коммерческой недвижимости в Пензенской области.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="projects">
+		<section class="choose-home">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2>Наши проекты:</h2>
+						<h2>Выберите ваш будущий дом</h2>
 					</div>
-					<div class="col-12 d-flex flex-wrap align-items-start">
-						<div class="projects-card">
-							<a href="#" class="projects-card__title">ЖК «Квартал 55»</a>
-							<a href="#" class="projects-card__img"><img src="img/project1.jpg" alt=""></a>
-							<div class="projects-card__body">
-								<a href="#" class="projects-card__link color-accent">kvartal55.com</a>
-								<a href="#" class="btn btn-accent">Подробнее</a>
-							</div>
+				</div>
+
+				<form method="post" class="choose-home-form">
+					<div class="row align-items-center">
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-20">
+							<label>
+								<div class="input-title">Жилой комплекс</div>
+								<select name="select" class="select-my select-my2">
+									<option value="любой">любой</option>
+									<option value="любой">любой</option>
+									<option value="любой">любой</option>
+								</select>
+							</label>
 						</div>
-						<div class="projects-card">
-							<a href="#" class="projects-card__title">ЖК «Семейный»</a>
-							<a href="#" class="projects-card__img"><img src="img/project2.jpg" alt=""></a>
-							<div class="projects-card__body">
-								<a href="#" class="projects-card__link color-accent">708000.ru</a>
-								<a href="#" class="btn btn-accent">Подробнее</a>
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-3 mb-20">
+							<div class="input-title">Сколько комнат?</div>
+							<ul class="list-room list-radio my-ul">
+								<li>
+									<label class="radio radio-room">
+										<input type="radio" name="radio">
+										<span class="radio-text">студия</span>
+									</label>
+								</li>
+								<li>
+									<label class="radio radio-room">
+										<input type="radio" name="radio">
+										<span class="radio-text">1</span>
+									</label>
+								</li>
+								<li>
+									<label class="radio radio-room">
+										<input type="radio" name="radio">
+										<span class="radio-text">2</span>
+									</label>
+								</li>
+								<li>
+									<label class="radio radio-room">
+										<input type="radio" name="radio">
+										<span class="radio-text">3</span>
+									</label>
+								</li>
+								<li>
+									<label class="radio radio-room">
+										<input type="radio" name="radio">
+										<span class="radio-text">4+</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mb-20">
+							<div class="benefit-box investment-box">
+								<div class="slider-range-wrapper slider-range-wrapper7">
+									<div class="input-title">Стоимость</div>
+
+									<div class="slider-range slider-range7">
+										<div class="slider-range__handle ui-slider-handle slider-range__handle4">
+											<span></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="benefit-box__value">
+									<span>2 000 000 ₽</span>
+									<span>25 000 000 ₽</span>
+								</div>
 							</div>
 						</div>
 
+<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-3 mb-20">
+	<button type="submit" class="btn btn-accent">показать</button>
+</div>
+
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="select-room select-building bg-light-grey">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-6">
+						<div class="select-room__image"><img src="img/room2.jpg" alt=""></div>
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<div class="h1">Подберем новостройку</div>
+						<div class="h2 text-transform-none font-normal">под ваши критерии</div>
+
+						<div class="select-room__footer">
+							<div class="box-text">
+								<p>ответь на 5 вопрос и получите список квартир</p>
+							</div>
+
+							<a href="#" class="btn btn-accent">
+								<span>подобрать квартиру</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="projects">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+						<div class="sorting-box">
+							<p>Проекты</p>
+							<select name="select" class="select-my select-my2">
+								<option value="в продаже">в продаже</option>
+								<option value="по алфавиту">по алфавиту</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+						<div class="sorting-box">
+							<p>Тип недвижимости</p>
+							<select name="select" class="select-my select-my2">
+								<option value="любой тип">любой тип</option>
+								<option value="по алфавиту">по алфавиту</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-md-6 col-xl-4 mb-33">
 						<div class="projects-card">
-							<a href="#" class="projects-card__title">Коммерческая недвижимость</a>
+							<ul class="list-labels my-ul">
+								<li>
+									<div class="btn btn-sm benefit-box-option">индивидуальная парковка</div>
+								</li>
+								<li>
+									<div class="btn btn-sm benefit-box-option">паркинг</div>
+								</li>
+							</ul>
+
+							<a href="#" class="projects-card__img"><img src="img/project1.jpg" alt=""></a>
+							<div class="projects-card__body">
+								<a href="#" class="projects-card__title">Квартал 55
+									<span>в ипотеку от 6 700 руб/мес</span>
+								</a>
+								<a href="#" class="btn btn-accent">
+									<span>на сайт ЖК</span>
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-top"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-4 mb-30">
+						<div class="projects-card">
+							<ul class="list-labels my-ul">
+								<li>
+									<div class="btn btn-sm benefit-box-option">кирпичные дома</div>
+								</li>
+								<li>
+									<div class="btn btn-sm benefit-box-option">квартиры с террасами</div>
+								</li>
+							</ul>
+
+							<a href="#" class="projects-card__img"><img src="img/project2.jpg" alt=""></a>
+							<div class="projects-card__body">
+								<a href="#" class="projects-card__title">Семейный
+									<span>в ипотеку от 6 700 руб/мес</span>
+								</a>
+								<a href="#" class="btn btn-accent">
+									<span>на сайт ЖК</span>
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-top"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-4 mb-30">
+						<div class="projects-card">
+							<ul class="list-labels my-ul">
+								<li>
+									<div class="btn btn-sm benefit-box-option">охраняемый двор</div>
+								</li>
+								<li>
+									<div class="btn btn-sm benefit-box-option">вид из окна</div>
+								</li>
+							</ul>
+
 							<a href="#" class="projects-card__img"><img src="img/project3.jpg" alt=""></a>
 							<div class="projects-card__body">
-								<a href="#" class="projects-card__link color-accent">alyans-business.ru</a>
-								<a href="#" class="btn btn-accent">Подробнее</a>
+								<a href="#" class="projects-card__title">Окружная 16
+									<span>в ипотеку от 6 700 руб/мес</span>
+								</a>
+								<a href="#" class="btn btn-accent">
+									<span>на сайт ЖК</span>
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-top"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="benefit">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="h1">Посчитайте вашу выгоду</div>
+						<ul class="list-radio benefit-list-variables my-ul">
+							<li>
+								<label class="radio">
+									<input type="radio" name="radio" checked>
+									<span class="radio-text">Ипотека 4%</span>
+								</label>
+							</li>
+							<li>
+								<label class="radio">
+									<input type="radio" name="radio">
+									<span class="radio-text">Семьи с детьми</span>
+								</label>
+							</li>
+							<li>
+								<label class="radio">
+									<input type="radio" name="radio">
+									<span class="radio-text">IT-специалистам</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-12 col-lg-6 d-none d-lg-block">
+						<div class="benefit-image"><img src="img/benefit.jpg" alt=""></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-4 mb-35">
+						<div class="benefit-box">
+							<div class="slider-range-wrapper slider-range-wrapper1">
+								<div class="input-title">Стоимость квартиры</div>
+
+								<input type="text" name="decimal" class="slider-range-input slider-range-input1">
+								<div class="slider-range slider-range1"></div>
+							</div>
+
+							<div class="benefit-box__value">
+								<span>2 млн. ₽</span>
+								<span>15 млн. ₽</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-4 mb-35">
+						<div class="benefit-box">
+							<div class="slider-range-wrapper slider-range-wrapper2">
+								<div class="input-title">Первоначальный взнос</div>
+
+								<input type="text" name="decimal" class="slider-range-input slider-range-input2">
+								<div class="slider-range slider-range2"></div>
+							</div>
+
+							<div class="benefit-box__value">
+								<span>300 000 ₽</span>
+								<span>5 млн. ₽</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-4 mb-35">
+						<div class="benefit-box">
+							<div class="slider-range-wrapper slider-range-wrapper3">
+								<div class="input-title">Срок кредита</div>
+
+								<input type="text" name="decimal" class="slider-range-input slider-range-input3">
+								<div class="slider-range slider-range3"></div>
+							</div>
+
+							<div class="benefit-box__value">
+								<span>5 лет</span>
+								<span>30 лет</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-start">
+						<div class="benefit-total-box">
+							<div class="benefit-total-box__left">
+								<h3>Стандартная ипотека</h3>
+								<ul class="benefit-total-box__list my-ul">
+									<li>
+										<span>Процентная ставка</span>
+										<p>6,7%</p>
+									</li>
+									<li>
+										<span>Ежемесячный платеж</span>
+										<p>22 178 ₽</p>
+									</li>
+									<li>
+										<span>Переплата</span>
+										<p>4 547 146 ₽</p>
+									</li>
+								</ul>
+							</div>
+							<div class="benefit-total-box__right">
+								<div class="benefit-total-box__value">
+									<div class="sum-value h1">0 ₽</div>
+									<div class="economy-item color-accent">без экономии</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="benefit-total-box">
+							<div class="benefit-total-box__left">
+								<h3>Ипотека 4%</h3>
+								<ul class="benefit-total-box__list my-ul">
+									<li>
+										<span>Процентная ставка</span>
+										<p>0,01%</p>
+									</li>
+									<li>
+										<span>Ежемесячный платеж</span>
+										<p>11 665 ₽</p>
+										<div class="economy-item color-green">
+											<span>Меньше на 10 513 ₽</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#figure"></use>
+											</svg>
+										</div>
+									</li>
+									<li>
+										<span>Переплата</span>
+										<p>6 310 ₽</p>
+										<div class="economy-item color-green">
+											<span>Меньше на 4 540 836 ₽</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#figure"></use>
+											</svg>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="benefit-total-box__right">
+								<div class="benefit-total-box__value">
+									<div class="sum-value h1">3 651 261 ₽</div>
+									<div class="economy-item color-green">экономия</div>
+								</div>
+								<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-accent">
+									<span>Подать запрос на одобрение</span>
+									<svg class="svg-icon svg-icon-plus">
+										<use xlink:href="img/sprite.svg#plus"></use>
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<section class="payment-options">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Способы покупки</h2>
+
+						<div class="payment-options-line">
+							<div class="payment-options-line__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#tab1"></use>
+								</svg></div>
+							<div class="payment-options-line__title">
+								<div class="h1">Ипотека от 4%</div>
+							</div>
+							<div class="payment-options-line__description">
+								<div class="box-text">
+									<p>Специальные условия приобретения квартир от банков партнёров</p>
+								</div>
+							</div>
+						</div>
+						<div class="payment-options-line">
+							<div class="payment-options-line__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#tab2"></use>
+								</svg></div>
+							<div class="payment-options-line__title">
+								<div class="h1">обмен</div>
+							</div>
+							<div class="payment-options-line__description">
+								<div class="box-text">
+									<p>Специальные условия приобретения квартир от банков партнёров</p>
+								</div>
+							</div>
+						</div>
+						<div class="payment-options-line">
+							<div class="payment-options-line__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#tab3"></use>
+								</svg></div>
+							<div class="payment-options-line__title">
+								<div class="h1">Рассрочка</div>
+							</div>
+							<div class="payment-options-line__description">
+								<div class="box-text">
+									<p>Специальные условия приобретения квартир от банков партнёров</p>
+								</div>
+							</div>
+						</div>
+						<div class="payment-options-line">
+							<div class="payment-options-line__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#tab4"></use>
+								</svg></div>
+							<div class="payment-options-line__title">
+								<div class="h1">Купить онлайн</div>
+							</div>
+							<div class="payment-options-line__description">
+								<div class="box-text">
+									<p>Специальные условия приобретения квартир от банков партнёров</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-news">
+			<div class="container">
+				<div class="row"></div>
+			</div>
+		</section>
+
 
 		<section class="gallery-projects">
 			<div class="container">
@@ -302,12 +692,12 @@
 						<label>
 							<input type="text" placeholder="телефон" name="phone" required>
 						</label>
-	
+
 						<button type="submit" class="btn btn-accent">отправить заявку</button>
 						<div class="consent">нажимая на кнопку вы соглашаетесь на политику конфиденциальности</div>
 					</form>
 				</div>
-	
+
 			</div>
 		</div>
 	</div>
