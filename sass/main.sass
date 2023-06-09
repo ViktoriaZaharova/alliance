@@ -1,5 +1,220 @@
 @import "vars"
 
+.home
+	overflow-x: hidden
+	.btn
+		margin: 55px 0 0
+
+.home-slider
+	.h1
+		margin: 0 0 48px
+		max-width: 650px
+
+.home-gallery
+	position: relative
+	.list-social
+		position: absolute
+		right: 35px
+		top: 0
+		flex-direction: column
+		align-items: center
+		li
+			margin: 0 0 48px
+
+.home-gallery-slider
+	width: calc(100% + 100px)
+	&__nav
+		position: absolute
+		left: 0
+		bottom: 80px
+		background: #fff
+		border-radius: 0px 5px 0px 0px
+		display: flex
+		align-items: center
+		padding: 40px 42px 40px 0
+		.slick-arrow
+			position: relative
+			border-radius: 0
+			width: 67px
+			height: 16px
+			stroke: none
+			fill: $accent
+			background: transparent
+			padding: 0
+			top: 0
+			left: 0
+			right: 0
+			transform: none
+			@include d-flex
+		.slick-prev
+			display: none !important
+		.slick-dots
+			margin: 0 0 0 43px
+			width: fit-content
+			position: relative
+			bottom: 0
+			li
+				margin: 0 27px 0 0
+				width: 10px
+				height: 10px
+				border: 1px solid $accent
+				&:last-child
+					margin: 0
+				&.slick-active
+					background: $accent
+					width: 16px
+					height: 16px
+	&__item
+		width: 100%
+		border-radius: 10px
+		position: relative
+		width: 382px
+		height: 338px
+		img
+			border-radius: 10px
+			width: 100%
+			height: 100%
+			object-fit: cover
+			opacity: 0.5
+	.slick-track
+		display: flex
+		align-items: stretch
+	.slick-slide
+		margin: 0 25px 0 0
+		height: auto
+		display: flex
+		align-items: flex-end
+		flex-wrap: wrap
+		padding: 0 0 80px
+	.slick-current
+
+		.home-gallery-slider__item
+			height: 712px
+			width: 794px
+			margin: 0
+			img
+				opacity: 1
+		.banner-sales
+			bottom: 0
+			padding: 20px 20px 120px
+			&__close
+				left: auto
+				right: 10px
+				top: 10px
+			.box-text
+				max-width: none
+			.btn
+				margin: 20px 0 0
+
+.banner-sales
+	position: absolute
+	z-index: 3
+	background: rgba(0, 0, 0, 0.8)
+	backdrop-filter: blur(17.5px)
+	border-radius: 10px
+	padding: 20px 20px 18px
+	color: #fff
+	left: 0
+	bottom: -80px
+	width: 100%
+	.box-text
+		color: #fff
+		max-width: 202px
+		font-size: 16px
+	&__close
+		width: 28px
+		height: 28px
+		border-radius: 50%
+		background: $accent
+		top: -8px
+		left: -11px
+		position: absolute
+		padding: 9px
+		fill: #fff
+		@include d-flex
+
+.section-news
+	overflow: hidden
+	margin: 150px 0 130px
+	.title-wrapper
+		margin: 0 0 48px
+	h2
+		margin: 0 35px 0 0
+
+.news-slider
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		width: 367px
+		height: 100%
+		background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+		right: 0
+		top: 0
+		z-index: 1
+	.slick-slide
+		margin: 0 30px 0 0
+	.news-card__title
+		font-size: 16px
+	.date
+		font-size: 24px
+
+.btn-all-post
+	margin: 0 0 0 auto
+
+.best-condition
+	position: relative
+	z-index: 1
+	width: 100%
+	border-radius: 10px
+	color: #fff
+	padding: 50px 67px
+	&__content
+		max-width: 566px
+		margin: 0 0 34px
+	.box-text
+		font-size: 16px
+		color: #fff
+		margin: 15px 0 0
+		max-width: 415px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: calc(1000px)
+		background: $accent
+		border-radius: 10px
+		z-index: -1
+	&__form
+		label
+			margin: 0 0 34px
+			width: calc(33.33% - 8px)
+		button
+			margin: 0
+			padding: 20px
+		.consent
+			margin: 15px 0 0
+			text-align: left
+			color: #fff
+			max-width: 260px
+			font-size: 10px
+		input
+			background: #fff
+			border: none
+			text-align: left
+			font-size: 14px
+			&::placeholder
+				color: #9E9E9E
+
+.form-row
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+
 .choose-home
 	h2
 		margin: 0 0 40px
@@ -19,7 +234,111 @@
 	select
 		font-size: 14px
 	[type="submit"]
-		padding: 20px 94px	
+		padding: 20px 94px
+
+.new-posts
+	margin: 0 0 150px
+
+.post-card
+	width: 100%
+	height: 100%
+	.date
+		margin: 0 0 19px
+	&__img
+		width: 100%
+		height: 407px
+		@include d-flex
+		border-radius: 10px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 10px
+	&__body
+		width: 100%
+		padding: 19px 0 0
+	&__title
+		color: #000000
+		display: -webkit-box
+		-webkit-line-clamp: 3
+		-webkit-box-orient: vertical
+		line-clamp: 3
+		text-overflow: ellipsis
+		overflow: hidden
+		margin: 0 0 19px
+		&:hover
+			color: $accent
+	&__footer
+		width: 100%
+		display: flex
+		align-items: center
+
+.post-card-info
+	background: #EEEEEE
+	border-radius: 10px
+	display: flex
+	align-items: center
+	padding: 6px 11px
+	margin: 0 11px 0 0
+	color: #9E9E9E
+	&:hover
+		color: $accent
+	&:last-child
+		margin: 0
+	&__icon
+		fill: none
+		stroke: #9E9E9E
+		width: 18px
+		height: 17px
+		min-width: 18px
+		@include d-flex
+		margin: 0 7px 0 0
+
+.view-box
+	display: flex
+	align-items: center
+	color: #9E9E9E
+	margin: 0 0 0 auto
+	&__icon
+		fill: #9E9E9E
+		margin: 0 7px 0 0
+		@include d-flex
+		width: 24px
+		height: 17px
+
+// gallery-projects
+.gallery-projects
+	overflow-x: hidden			
+
+.grid-wrapper
+	margin: 0 auto
+	display: grid
+	grid-template-columns: 25% 22% 25% 
+	grid-template-rows: auto auto 400px
+	grid-gap: 30px
+	// grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+	// grid-auto-rows: 200px
+
+	img
+		object-fit: cover
+		width: 100%
+		height: 100%
+		border-radius: 5px
+
+.item-a
+	grid-row: 1 / 3
+
+.item-b
+	grid-column: 3 / 5
+
+.item-c
+	grid-row: 2 / 4
+
+.item-d
+	grid-column: 3 / 5
+
+.item-e
+	grid-row: 1 / 3
 
 .title-section
 	padding: 70px 0 83px

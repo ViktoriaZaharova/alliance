@@ -45,6 +45,10 @@
     padding: 0 0 0 20px;
     margin: 0 0 0 20px;
   }
+  .home-gallery-slider .slick-current .home-gallery-slider__item {
+    width: 600px;
+    height: 640px;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .menu {
@@ -188,6 +192,25 @@
   .options-line-box:last-child {
     padding: 0;
     margin: 0 0 20px;
+  }
+  .home-gallery-slider .slick-current .home-gallery-slider__item {
+    width: 450px;
+    height: 500px;
+  }
+  .home-gallery-slider .slick-slide {
+    padding: 0 0 50px;
+  }
+  .banner-sales {
+    bottom: -50px;
+  }
+  .home-gallery-slider__nav {
+    bottom: 50px;
+  }
+  .home {
+    margin: 0 0 50px;
+  }
+  .home-gallery .list-social li {
+    margin: 0 0 25px;
   }
 }
 @media only screen and (max-width: 1200px) {

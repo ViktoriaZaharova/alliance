@@ -6,8 +6,39 @@ $('.btn-burger').on('click', function () {
 
 Fancybox.bind("[data-fancybox]");
 
+$('.banner-sales__close').click(function (e) {
+	e.preventDefault();
+	$(this).parents('.banner-sales').fadeOut();
+});
+
+$('.home-slider').slick({
+	slidesToShow: 1,
+	arrows: false,
+	swipe: false,
+	fade: true,
+});
+
+$('.home-gallery-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	arrows: true,
+	dots: true,
+	appendDots: '.home-gallery-slider__nav',
+	appendArrows: '.home-gallery-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#home-slider-right"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#home-slider-right"></use></svg></button>',
+	asNavFor: '.home-slider',
+});
+
+$('.news-slider').slick({
+	slidesToShow: 3,
+	infinite: false,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
 $('.article-gallery').slick({
-	slidesToshow: 4,
+	slidesToShow: 4,
 	infinite: false,
 	variableWidth: true,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
@@ -15,14 +46,14 @@ $('.article-gallery').slick({
 });
 
 $('.about-family-slider').slick({
-	slidesToshow: 1,
+	slidesToShow: 1,
 	fade: true,
 	dots: true,
 	arrows: false
 });
 
 $('.product-card__image').slick({
-	slidesToshow: 1,
+	slidesToShow: 1,
 	fade: true,
 	dots: true,
 	arrows: false,
