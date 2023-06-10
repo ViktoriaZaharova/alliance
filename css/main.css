@@ -2691,6 +2691,8 @@
 
 .help-social {
   margin: 134px 0;
+  position: relative;
+  overflow-x: hidden;
 }
 .help-social h2 {
   margin: 0 0 60px;
