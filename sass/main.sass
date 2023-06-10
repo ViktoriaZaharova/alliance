@@ -9,6 +9,19 @@
 	.h1
 		margin: 0 0 48px
 		max-width: 650px
+	&-item
+		&__img
+			display: none
+			width: 100%
+			height: 350px
+			margin: 24px 0 26px
+			align-items: center
+			justify-content: center
+			img
+				border-radius: 10px
+				width: 100%
+				height: 100%
+				object-fit: cover
 
 .home-gallery
 	position: relative
@@ -32,6 +45,8 @@
 		display: flex
 		align-items: center
 		padding: 40px 42px 40px 0
+		.btn
+			margin: 0 36px 0 0
 		.slick-arrow
 			position: relative
 			border-radius: 0
@@ -235,13 +250,15 @@
 		font-size: 14px
 	[type="submit"]
 		padding: 20px 94px
+		margin: 10px 0 0
 
 .new-posts
 	margin: 0 0 150px
 
 .post-card
-	width: 100%
+	width: 407px
 	height: 100%
+	margin: 0 30px 0 0
 	.date
 		margin: 0 0 19px
 	&__img
@@ -308,12 +325,13 @@
 
 // gallery-projects
 .gallery-projects
-	overflow-x: hidden			
+	overflow-x: hidden
+	margin: 0 0 40px
 
 .grid-wrapper
 	margin: 0 auto
 	display: grid
-	grid-template-columns: 25% 22% 25% 
+	grid-template-columns: 25% 22% 25%
 	grid-template-rows: auto auto 400px
 	grid-gap: 30px
 	// grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
@@ -400,6 +418,9 @@
 
 .projects
 	margin: 48px 0 100px
+	.sorting-box
+		select
+			min-width: 250px
 
 .projects-card
 	position: relative
@@ -441,9 +462,11 @@
 		bottom: 0
 		left: 0
 		width: 100%
+		.btn
+			padding: 18px 20px
 	&__title
 		color: #fff
-		font-size: 20px
+		font-size: 40px
 		padding: 20px 34px 27px 22px
 		background: rgba(0, 0, 0, 0.6)
 		backdrop-filter: blur(7.5px)
@@ -455,8 +478,6 @@
 			margin: 10px 0 0
 		&:hover
 			color: $accent
-	.btn
-		padding: 18px 20px
 
 // page-information
 .page-information

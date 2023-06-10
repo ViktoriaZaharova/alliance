@@ -16,6 +16,14 @@ $('.home-slider').slick({
 	arrows: false,
 	swipe: false,
 	fade: true,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				swipe: true,
+			}
+		}
+	]
 });
 
 $('.home-gallery-slider').slick({
@@ -35,7 +43,28 @@ $('.news-slider').slick({
 	infinite: false,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		}, 
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: true
+			}
+		}
+	]
 });
+
+$('.posts-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	arrows: false
+})
 
 $('.article-gallery').slick({
 	slidesToShow: 4,
@@ -57,8 +86,6 @@ $('.product-card__image').slick({
 	fade: true,
 	dots: true,
 	arrows: false,
-	// autoplay: true,
-	// autoplaySpeed: 2000,
 });
 
 $(".cb-value").click(function () {
