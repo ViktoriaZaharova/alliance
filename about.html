@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Альянс - группа помпаний</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-center">
+						<a href="index.html" class="logo">
+							<img src="img/logo.svg" alt="" class="d-none d-sm-block">
+							<img src="img/logo-mobile.svg" alt="" class="d-block d-sm-none">
+						</a>
+
+						<nav class="nav-menu">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+							<ul class="menu my-ul">
+								<li><a href="objects.html">объекты</a></li>
+								<li><a href="commercial.html">коммерческая недвижимость</a></li>
+								<li><a href="purchase-methods.html">способы покупки</a></li>
+								<li><a href="about.html">о нас</a></li>
+								<li><a href="contacts.html">контакты</a></li>
+							</ul>
+
+							<div class="schedule">
+								<span>офис продаж:</span>
+								<p>9:00-18:00</p>
+							</div>
+
+							<div class="user-navigation btn-group">
+								<a href="#" class="user-navigation__link">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</a>
+								<a href="#" class="user-navigation__link">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#comparison"></use>
+									</svg>
+								</a>
+							</div>
+
+							<a href="#" class="btn btn-callback btn-sm btn-border-grey" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать
+								звонок</a>
+
+							<a href="tel:+78412708080" class="phone">+7 (8412) 70-80-80</a>
+
+							<ul class="list-social my-ul">
+								<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+							</ul>
+						</nav>
+
+						<div class="schedule">
+							<span>офис продаж:</span>
+							<p>9:00-18:00</p>
+						</div>
+
+						<div class="user-navigation btn-group">
+							<a href="#" class="user-navigation__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#heart"></use>
+								</svg>
+							</a>
+							<a href="#" class="user-navigation__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#comparison"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="btn-group">
+							<a href="#" class="btn btn-sm btn-border-accent btn-mortgage">ипотека от 4%</a>
+							<a href="#" class="btn btn-sm btn-border-grey" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать звонок</a>
+						</div>
+						<a href="tel:+78412708080" class="phone">+7 (8412) 70-80-80</a>
+
+						<div class="btn-burger"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#burger"></use>
+							</svg></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page page-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="nav-breadcrumb">
+							<ul class="breadcrumb my-ul">
+								<li><a href="index.html">Главная</a></li>
+								<li><span>О нас</span></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-7 order-lg-1 mb-30">
+						<div class="about-image"><img src="img/about1.jpg" alt=""></div>
+					</div>
+
+					<div class="col-12 col-xl-9 col-xxl-10">
+						<h1>О нас</h1>
+					</div>
+					<div class="col-12 col-xl-3 col-xxl-2">
+						<a href="#vacansies" class="btn btn-accent btn-vacansies go_to">
+							<span>вакансии</span>
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#bottom"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="col-12 col-lg-5">
+						<div class="about-description">
+							<div class="h2 text-transform-none font-normal">10 лет на рынке недвижимости</div>
+							<div class="box-text">
+								<p>Мы предлагаем наиболее интересные районы города, как активно развивающиеся и перспективные, так и
+									центральную его часть
+									- для премиального сегмента бизнеса. Мы учитываем разный вид деятельности и проектируем максимально
+									подходящие помещения
+									- окна-витрины, зоны разгрузки (дебаркадер), широкий диапазон площадей, высокую мощность сетей. Мы
+									лояльны и
+									клиентоориентированны! Наши условия совпадают с вашими возможностями! Можно приобрести как готовый
+									бизнес (помещение с
+									арендатором), так и обсудить максимально гибкие условия покупки или аренды офиса/ торговой/
+									коммерческой площади.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>наша команда</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-7 mb-20">
+						<div class="team-image"><img src="img/team1.jpg" alt=""></div>
+					</div>
+					<div class="col-12 col-lg-5 mb-20">
+						<div class="team-image"><img src="img/team2.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="company-founder bg-light-grey">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-xxl-4">
+						<div class="company-founder__title">
+							<h2>Сергей Александрович Измайлов</h2>
+							<p>основатель компании
+								<a href="index.html"><img src="img/logo.svg" alt=""></a>
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-xxl-4">
+						<div class="company-founder__photo"><img src="img/admin.jpg" alt=""></div>
+					</div>
+					<div class="col-12 col-xxl-4">
+						<div class="company-founder__description">
+							<div class="text">
+								<p>Мы предлагаем наиболее интересные районы города, как активно развивающиеся и перспективные, так и
+									центральную его часть
+									- для премиального сегмента бизнеса. Мы учитываем разный вид деятельности и проектируем максимально
+									подходящие помещения
+									- окна-витрины, зоны разгрузки (дебаркадер), широкий диапазон площадей, высокую мощность сетей. Мы
+									лояльны и
+									клиентоориентированны! Наши условия совпадают с вашими возможностями! Можно приобрести как готовый
+									бизнес (помещение с
+									арендатором), так и обсудить максимально гибкие условия покупки или аренды офиса/ торговой/
+									коммерческой
+									площади.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="history">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>История компании</h2>
+					</div>
+
+					<div class="col-12">
+						<div class="history-slider">
+							<div class="slide">
+								<div class="history-card">
+									<div class="history-card__img"><img src="img/history1.jpg" alt=""></div>
+									<div class="date">2012</div>
+									<div class="history-card__body">
+										<p>ЖK «Семeйный» - это новый динaмичнo развивающийся район c важными точками притяжения трафика</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="history-card">
+									<div class="history-card__img"><img src="img/history2.jpg" alt=""></div>
+									<div class="date">2013</div>
+									<div class="history-card__body">
+										<p>ЖK «Семeйный» - это новый динaмичнo развивающийся район c важными точками притяжения трафика</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="history-card">
+									<div class="history-card__img"><img src="img/history3.jpg" alt=""></div>
+									<div class="date">2014</div>
+									<div class="history-card__body">
+										<p>ЖK «Семeйный» - это новый динaмичнo развивающийся район c важными точками притяжения трафика</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="history-card">
+									<div class="history-card__img"><img src="img/history4.jpg" alt=""></div>
+									<div class="date">2015</div>
+									<div class="history-card__body">
+										<p>ЖK «Семeйный» - это новый динaмичнo развивающийся район c важными точками притяжения трафика</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="history-card">
+									<div class="history-card__img"><img src="img/history5.jpg" alt=""></div>
+									<div class="date">2016</div>
+									<div class="history-card__body">
+										<p>ЖK «Семeйный» - это новый динaмичнo развивающийся район c важными точками притяжения трафика</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="help-social">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>социальные инициативы</h2>
+					</div>
+
+					<div class="col-12">
+						<div class="help-social-slider">
+							<div class="slide">
+								<div class="help-social-card">
+									<a href="#" class="help-social-card__img"><img src="img/help1.jpg" alt=""></a>
+
+									<div class="help-social-card__body">
+										<div class="date">12.04</div>
+
+										<a href="#" class="help-social-card__title">Специальные условия приобретения квартир от банков
+											партнёров</a>
+
+										<a href="#" class="btn btn-accent">
+											<span>подробнее</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="help-social-card">
+									<a href="#" class="help-social-card__img"><img src="img/help2.jpg" alt=""></a>
+							
+									<div class="help-social-card__body">
+										<div class="date">12.04</div>
+							
+										<a href="#" class="help-social-card__title">Специальные условия приобретения квартир от банков
+											партнёров</a>
+							
+										<a href="#" class="btn btn-accent">
+											<span>подробнее</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="help-social-card">
+									<a href="#" class="help-social-card__img"><img src="img/help3.jpg" alt=""></a>
+							
+									<div class="help-social-card__body">
+										<div class="date">12.04</div>
+							
+										<a href="#" class="help-social-card__title">Специальные условия приобретения квартир от банков
+											партнёров</a>
+							
+										<a href="#" class="btn btn-accent">
+											<span>подробнее</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="help-social-card">
+									<a href="#" class="help-social-card__img"><img src="img/help4.jpg" alt=""></a>
+							
+									<div class="help-social-card__body">
+										<div class="date">12.04</div>
+							
+										<a href="#" class="help-social-card__title">Специальные условия приобретения квартир от банков
+											партнёров</a>
+							
+										<a href="#" class="btn btn-accent">
+											<span>подробнее</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="diplomas">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Дипломы</h2>
+					</div>
+					<div class="col-12">
+						<div class="diplomas-slider">
+							<div class="slide"><a href="img/diploma.jpg" class="diplomas-item" data-fancybox="diploma"><img src="img/diploma.jpg" alt=""></a></div>
+							<div class="slide"><a href="img/diploma1.jpg" class="diplomas-item" data-fancybox="diploma"><img src="img/diploma1.jpg" alt=""></a></div>
+							<div class="slide"><a href="img/diploma3.jpg" class="diplomas-item" data-fancybox="diploma"><img src="img/diploma3.jpg" alt=""></a></div>
+							<div class="slide"><a href="img/diploma4.jpg" class="diplomas-item" data-fancybox="diploma"><img src="img/diploma4.jpg" alt=""></a></div>
+							<div class="slide"><a href="img/diploma5.jpg" class="diplomas-item" data-fancybox="diploma"><img src="img/diploma5.jpg" alt=""></a></div>
+							<div class="slide"><a href="img/diploma1.jpg" class="diplomas-item" data-fancybox="diploma"><img src="img/diploma1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="vacansies bg-light-grey" id="vacansies">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Вакансии</h2>
+						<div class="vacansies-wrapper">
+							<div class="text"><p>Мы предлагаем наиболее интересные районы города, как активно развивающиеся и перспективные, так и центральную его часть
+							- для премиального сегмента бизнеса. Мы учитываем разный вид деятельности и проектируем максимально подходящие помещения
+							- окна-витрины, зоны разгрузки (дебаркадер), широкий диапазон площадей, высокую мощность сетей. Мы лояльны и
+							клиентоориентированны!</p></div>
+							<a href="#" class="btn btn-accent">
+								<span>Ознакомиться с вакансиями</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="vacansies-advantages">
+							<div class="vacansies-advantages__item">
+								<div class="vacansies-advantages__item-icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#tab2"></use>
+									</svg>
+								</div>
+								<div class="vacansies-advantages__item-text">
+									<p>Преимущество работы у нас</p>
+								</div>
+							</div>
+							<div class="vacansies-advantages__item">
+								<div class="vacansies-advantages__item-icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#tab2"></use>
+									</svg>
+								</div>
+								<div class="vacansies-advantages__item-text">
+									<p>Преимущество работы у нас</p>
+								</div>
+							</div>
+							<div class="vacansies-advantages__item">
+								<div class="vacansies-advantages__item-icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#tab2"></use>
+									</svg>
+								</div>
+								<div class="vacansies-advantages__item-text">
+									<p>Преимущество работы у нас</p>
+								</div>
+							</div>
+							<div class="vacansies-advantages__item">
+								<div class="vacansies-advantages__item-icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#tab2"></use>
+									</svg>
+								</div>
+								<div class="vacansies-advantages__item-text">
+									<p>Преимущество работы у нас</p>
+								</div>
+							</div>
+							<div class="vacansies-advantages__item">
+								<div class="vacansies-advantages__item-icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#tab2"></use>
+									</svg>
+								</div>
+								<div class="vacansies-advantages__item-text">
+									<p>Преимущество работы у нас</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row align-items-stretch">
+					<div class="col-12 col-lg-6">
+						<div class="footer-box">
+							<h3 class="text-uppercase">Приезжайте к нам в офис</h3>
+							<div class="box-text">
+								<p>Наши специалисты с радостью расскажут вам о проекте, помогут с выбором квартиры. Пусть сбываются ваши
+									мечты!</p>
+							</div>
+							<a href="tel:+78412708000" class="phone">8 (8412) 70-80-00</a>
+							<div class="address">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#location"></use>
+								</svg>
+								<p>Пензенская область, с. Засечное, ул. Семейная, 12к1</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="call-box">
+							<h3>или
+								напишите нам</h3>
+							<div class="box-text">
+								<p>Наши специалисты свяжутся с Вами в кратчайшие сроки и с удовольствием ответят на все ваши вопросы</p>
+							</div>
+
+							<div class="call-box__footer">
+								<a href="#" class="btn btn-accent">написать специалистам</a>
+								<ul class="list-social my-ul">
+									<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+								</ul>
+							</div>
+
+							<a href="#" target="_blank" class="link-developer">
+								<span>разработано</span>
+								<img src="img/logo-developer.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Оставить заявку</div>
+					<div class="box-text">
+						<p>оставьте ваши данные и свяжемся с вами в ближайшее время</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="телефон" name="phone" required>
+						</label>
+
+						<button type="submit" class="btn btn-accent">отправить заявку</button>
+						<div class="consent">нажимая на кнопку вы соглашаетесь на политику конфиденциальности</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

@@ -2609,3 +2609,309 @@
 .select-building {
   margin: 100px 0 50px;
 }
+
+.page-about {
+  margin: 0 0 90px;
+}
+.page-about .h2 {
+  max-width: 440px;
+  margin: 0 0 28px;
+}
+.page-about .box-text {
+  font-size: 20px;
+  color: #000;
+}
+
+.about-image, .team-image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-image img, .team-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn-vacansies {
+  padding: 20px 48px;
+  margin-left: auto;
+}
+
+.team h2 {
+  margin: 0 0 40px;
+}
+
+.company-founder {
+  margin: 210px 0 260px;
+}
+.company-founder__photo {
+  margin: -107px 0 -90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.company-founder__photo img {
+  border-radius: 10px;
+  width: 100%;
+}
+.company-founder__title p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
+  margin: 46px 0 0;
+  font-size: 24px;
+}
+.company-founder__title p a {
+  margin: 0 0 5px 10px;
+}
+.company-founder__description {
+  font-size: 20px;
+}
+.company-founder__description .text {
+  max-width: 504px;
+  margin: 0 0 0 auto;
+}
+
+.help-social {
+  margin: 134px 0;
+}
+.help-social h2 {
+  margin: 0 0 60px;
+}
+
+.help-social-card {
+  margin: 0 30px 0 0;
+  width: 408px;
+}
+.help-social-card__img {
+  width: 100%;
+  height: 262px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.help-social-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.help-social-card__body {
+  padding: 15px 0 0;
+}
+.help-social-card__title {
+  color: #000;
+  font-size: 24px;
+  margin: 15px 0 0;
+}
+.help-social-card__title:hover {
+  color: #EF402F;
+}
+.help-social-card .btn {
+  margin: 25px 0 0;
+}
+
+.diplomas {
+  margin: 0 0 134px;
+}
+.diplomas h2 {
+  margin: 0 0 60px;
+}
+
+.diplomas-slider {
+  padding: 0 68px 0 0;
+}
+.diplomas-slider .slick-prev {
+  display: none !important;
+}
+.diplomas-slider .slide {
+  margin: 0 50px 0 0;
+}
+
+.diplomas-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.diplomas-item img {
+  width: 100%;
+}
+
+.vacansies {
+  padding: 60px 0;
+}
+
+.vacansies-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 28px 0 74px;
+}
+.vacansies-wrapper .text {
+  font-size: 20px;
+  max-width: 1163px;
+}
+.vacansies-wrapper .btn {
+  margin: 0 auto;
+  padding: 20px 48px;
+}
+
+.vacansies-advantages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.vacansies-advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  margin: 0 0 50px;
+}
+.vacansies-advantages__item-icon {
+  border: 1px solid #EF402F;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 74px;
+  height: 74px;
+  min-width: 74px;
+  padding: 17px;
+  fill: none;
+  stroke: #EF402F;
+}
+.vacansies-advantages__item-text {
+  padding: 13px 0;
+  margin: 0 0 0 43px;
+  max-width: 185px;
+  width: 100%;
+}
+
+.history {
+  position: relative;
+  overflow-x: hidden;
+}
+.history h2 {
+  margin: 0 0 90px;
+}
+
+.history-slider {
+  width: calc(100% + 150px);
+  position: relative;
+}
+.history-slider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  z-index: -1;
+}
+.history-slider .slick-slide {
+  margin: 0 120px 0 0;
+}
+.history-slider .slick-current .history-card::before {
+  background: #EF402F;
+}
+.history-slider .slick-current .history-card .date {
+  color: #000;
+}
+
+.history-card {
+  position: relative;
+  z-index: 1;
+  padding: 86px 0 0 0;
+  width: 300px;
+  font-size: 20px;
+}
+.history-card__body {
+  color: #707070;
+}
+.history-card .date {
+  margin: 24px 0;
+  font-size: 96px;
+  text-transform: uppercase;
+  color: #9E9E9E;
+}
+.history-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #EF402F;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+}
+.history-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 151px;
+}
