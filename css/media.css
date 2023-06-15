@@ -45,9 +45,11 @@
     padding: 0 0 0 20px;
     margin: 0 0 0 20px;
   }
-  .home-gallery-slider .slick-current .home-gallery-slider__item {
-    width: 600px;
+  .home-gallery-slider .slick-slide {
     height: 640px;
+  }
+  .home-gallery-slider__item {
+    width: 600px;
   }
   .choose-home .list-room li {
     margin: 0 15px 10px 0;
@@ -78,6 +80,10 @@
   }
   .vacansies-wrapper .text {
     max-width: 900px;
+  }
+  .document-item {
+    padding: 20px 30px;
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 1500px) {
@@ -220,15 +226,15 @@
     padding: 0;
     margin: 0 0 20px;
   }
-  .home-gallery-slider .slick-current .home-gallery-slider__item {
-    width: 450px;
+  .home-gallery-slider .slick-slide {
     height: 500px;
+  }
+  .home-gallery-slider__item {
+    width: 450px;
+    height: 280px;
   }
   .home-gallery-slider .slick-slide {
     padding: 0 0 50px;
-  }
-  .banner-sales {
-    bottom: -50px;
   }
   .home-gallery-slider__nav {
     bottom: 50px;
@@ -244,6 +250,9 @@
   }
   .vacansies-wrapper .text {
     max-width: 750px;
+  }
+  .document-item__icon {
+    margin: 0 20px 0 0;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1103,10 +1112,10 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .document-box {
+  .document-item {
     padding: 30px 25px;
   }
-  .document-box__icon {
+  .document-item__icon {
     margin: 0 25px 0 0;
   }
   .product-information-gallery__image {
@@ -1337,7 +1346,7 @@
     line-clamp: 6;
     -webkit-line-clamp: 6;
   }
-  .mb-40 {
+  .mb-50, .mb-40 {
     margin-bottom: 30px;
   }
   .vacansies-advantages__item {
@@ -1371,6 +1380,12 @@
   }
   .home-gallery-slider__nav .btn {
     margin: 0 20px 0 0;
+  }
+  .nav-tabs-my .nav-link {
+    padding: 15px;
+  }
+  .banner-sales {
+    max-width: 280px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -1486,6 +1501,27 @@
   .payment-options-line__description .box-text {
     font-size: 16px;
   }
+  .nav-tabs-my .nav-item {
+    margin: 0 10px 10px 0;
+  }
+  .nav-tabs-my .nav-link {
+    font-size: 11px;
+    padding: 10px;
+  }
+  .variable-purchase {
+    font-size: 11px;
+  }
+  .variable-purchase li {
+    margin: 0 10px 10px 0;
+  }
+  .variable-purchase-item {
+    padding: 10px 15px;
+  }
+  .variable-purchase-item__icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
 }
 @media only screen and (max-width: 370px) {
   .phone {
@@ -1513,21 +1549,25 @@
   .btn .svg-icon-plus {
     height: 16px;
   }
+  .btn-clear .svg-icon {
+    width: 12px;
+    height: 13px;
+  }
   .variable-purchase-item {
     padding: 10px;
   }
   .variable-purchase-item__icon {
-    width: 34px;
-    height: 34px;
-    min-width: 34px;
-    padding: 8px;
-    margin: 0 7px 0 0;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    padding: 5px;
+    margin: 0 5px 0 0;
   }
   .variable-purchase {
-    font-size: 11px;
+    font-size: 10.5px;
   }
   .variable-purchase li {
-    margin: 0 8px 8px 0;
+    margin: 0 5px 5px 0;
   }
   .benefit-total-box {
     padding: 30px;
@@ -1576,5 +1616,18 @@
   }
   .best-condition__content .h2 {
     font-size: 36px;
+  }
+  .document-item {
+    font-size: 18px;
+  }
+  .document-box__body {
+    padding: 30px 20px;
+    width: calc(100% - 120px);
+  }
+  .document-box__title {
+    font-size: 19px;
+  }
+  .document-box__size {
+    width: 120px;
   }
 }

@@ -860,6 +860,10 @@ a.color-accent:hover {
   fill: none;
 }
 
+.slider-range {
+  font-family: "Montserrat", sans-serif;
+}
+
 .slider-range-input {
   width: 100%;
   border: 1px solid #EF402F;

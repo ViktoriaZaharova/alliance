@@ -83,8 +83,9 @@
 		width: 100%
 		border-radius: 10px
 		position: relative
-		width: 382px
+		width: 794px
 		height: 338px
+		transition: .5s ease
 		img
 			border-radius: 10px
 			width: 100%
@@ -101,41 +102,31 @@
 		align-items: flex-end
 		flex-wrap: wrap
 		padding: 0 0 80px
+		height: 712px
 	.slick-current
-
 		.home-gallery-slider__item
-			height: 712px
-			width: 794px
+			height: 100%
 			margin: 0
 			img
 				opacity: 1
-		.banner-sales
-			bottom: 0
-			padding: 20px 20px 120px
-			&__close
-				left: auto
-				right: 10px
-				top: 10px
-			.box-text
-				max-width: none
-			.btn
-				margin: 20px 0 0
 
 .banner-sales
-	position: absolute
+	position: fixed
+	bottom: 20px
+	right: 20px
 	z-index: 3
 	background: rgba(0, 0, 0, 0.8)
 	backdrop-filter: blur(17.5px)
 	border-radius: 10px
 	padding: 20px 20px 18px
 	color: #fff
-	left: 0
-	bottom: -80px
 	width: 100%
+	max-width: 420px
 	.box-text
 		color: #fff
 		max-width: 202px
 		font-size: 16px
+		margin: 0 0 18px
 	&__close
 		width: 28px
 		height: 28px
@@ -1374,7 +1365,7 @@
 		text-transform: none
 		margin: 0 0 65px
 
-.document-box
+.document-item
 	display: flex
 	align-items: center
 	background: #fff
@@ -1383,6 +1374,7 @@
 	padding: 30px 45px
 	font-size: 24px
 	color: #000
+	width: 100%
 	&:hover
 		color: $accent
 	&__icon
@@ -1727,7 +1719,7 @@
 
 .btn-vacansies
 	padding: 20px 48px
-	margin-left: auto	
+	margin-left: auto
 
 .team
 	h2
@@ -1749,7 +1741,7 @@
 			margin: 46px 0 0
 			font-size: 24px
 			a
-				margin: 0 0 5px 10px		
+				margin: 0 0 5px 10px
 	&__description
 		font-size: 20px
 		.text
@@ -1767,7 +1759,7 @@
 	margin: 0 30px 0 0
 	width: 408px
 	&__img
-		width: 100% 
+		width: 100%
 		height: 262px
 		@include d-flex
 		img
@@ -1784,7 +1776,7 @@
 		&:hover
 			color: $accent
 	.btn
-		margin: 25px 0 0		
+		margin: 25px 0 0
 
 .diplomas
 	margin: 0 0 134px
@@ -1796,19 +1788,19 @@
 	.slick-prev
 		display: none !important
 	.slide
-		margin: 0 50px 0 0	
+		margin: 0 50px 0 0
 
 .diplomas-item
 	width: 100%
 	@include d-flex
 	img
-		width: 100%				
+		width: 100%
 
 .vacansies
 	padding: 60px 0
 
-.vacansies-wrapper	
-	width: 100%	
+.vacansies-wrapper
+	width: 100%
 	display: flex
 	align-items: center
 	flex-wrap: wrap
@@ -1821,7 +1813,7 @@
 		padding: 20px 48px
 
 .vacansies-advantages
-	width: 100%	
+	width: 100%
 	display: flex
 	align-items: flex-start
 	flex-wrap: wrap
@@ -1845,7 +1837,7 @@
 			padding: 13px 0
 			margin: 0 0 0 43px
 			max-width: 185px
-			width: 100%	
+			width: 100%
 
 .history
 	position: relative
@@ -1854,7 +1846,7 @@
 		margin: 0 0 90px
 
 .history-slider
-	width: calc(100% + 150px)	
+	width: calc(100% + 150px)
 	position: relative
 	&::after
 		content: ''
@@ -1866,13 +1858,13 @@
 		background: #000
 		z-index: -1
 	.slick-slide
-		margin: 0 120px 0 0	
-	.slick-current	
+		margin: 0 120px 0 0
+	.slick-current
 		.history-card
 			&::before
 				background: $accent
 			.date
-				color: #000	
+				color: #000
 
 .history-card
 	position: relative
@@ -1885,7 +1877,7 @@
 	.date
 		margin: 24px 0
 		font-size: 96px
-		text-transform: uppercase	
+		text-transform: uppercase
 		color: #9E9E9E
 	&::before
 		content: ''
@@ -1901,5 +1893,3 @@
 		@include d-flex
 		width: 100%
 		height: 151px
-
-
