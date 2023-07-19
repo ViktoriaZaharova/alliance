@@ -105,6 +105,12 @@
   .product-information-details {
     padding: 30px;
   }
+  .family-advantages-box {
+    font-size: 16px;
+  }
+  .family-advantages-box__text {
+    padding: 0 15px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .projects-card {

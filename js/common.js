@@ -49,7 +49,7 @@ $('.news-slider').slick({
 			settings: {
 				slidesToShow: 2,
 			}
-		}, 
+		},
 		{
 			breakpoint: 576,
 			settings: {
@@ -217,69 +217,81 @@ $(".slider-range-input3").keyup(function () {
 
 
 $(function () {
-	var handle = $(".slider-range__handle1 span");
+	var handle1 = $(".slider-range__handle1-0 span");
+	var handle2 = $(".slider-range__handle1-1 span");
 	$(".slider-range4").slider({
 		animate: true,
-		range: "min",
-		value: 5,
+		range: true,
+		values: [3, 5],
 		min: 3,
 		max: 8,
 		create: function () {
-			handle.text($(this).slider("value"));
+			handle1.text($(this).slider("values", 0));
+			handle2.text($(this).slider("values", 1));
 		},
 		slide: function (event, ui) {
-			handle.text(ui.value);
+			handle1.text(ui.values[0]);
+			handle2.text(ui.values[1]);
 		}
 	});
 });
 
 $(function () {
-	var handle = $(".slider-range__handle2 span");
+	var handle1 = $(".slider-range__handle2-0 span");
+	var handle2 = $(".slider-range__handle2-1 span");
 	$(".slider-range5").slider({
 		animate: true,
-		range: "min",
-		value: 76,
+		range: true,
+		values: [40, 76],
 		min: 40,
 		max: 100,
 		create: function () {
-			handle.text($(this).slider("value"));
+			handle1.text($(this).slider("values", 0));
+			handle2.text($(this).slider("values", 1));
 		},
 		slide: function (event, ui) {
-			handle.text(ui.value);
+			handle1.text(ui.values[0]);
+			handle2.text(ui.value[1]);
 		}
 	});
 });
 
 $(function () {
-	var handle = $(".slider-range__handle3 span");
+	var handle1 = $(".slider-range__handle3-0 span");
+	var handle2 = $(".slider-range__handle3-1 span");
 	$(".slider-range6").slider({
 		animate: true,
-		range: "min",
-		value: 4,
+		range: true,
+		values: [1, 4],
 		min: 1,
 		max: 10,
 		create: function () {
-			handle.text($(this).slider("value"));
+			handle1.text($(this).slider("values", 0));
+			handle2.text($(this).slider("values", 1));
 		},
 		slide: function (event, ui) {
-			handle.text(ui.value);
+			handle1.text(ui.values[0]);
+			handle2.text(ui.values[1]);
 		}
 	});
 });
 
 $(function () {
-	var handle = $(".slider-range__handle4 span");
+	var handle1 = $(".slider-range__handle4-0 span");
+	var handle2 = $(".slider-range__handle4-1 span");
 	$(".slider-range7").slider({
 		animate: true,
-		range: "min",
-		value: 15000000,
+		range: true,
+		values: [2000000, 15000000],
 		min: 2000000,
 		max: 25000000,
 		create: function () {
-			handle.text($(this).slider("value") + '₽');
+			handle1.text($(this).slider("values", 0) + '₽');
+			handle2.text($(this).slider("values", 1) + '₽');
 		},
 		slide: function (event, ui) {
-			handle.text(ui.value + '₽');
+			handle1.text(ui.values[0] + '₽');
+			handle2.text(ui.values[1] + '₽');
 		}
 	});
 });
